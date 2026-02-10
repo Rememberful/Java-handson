@@ -73,3 +73,8 @@
 
 1. Feature Release (every 6 months)
 
+<h2><u>Servlets: Java on the Server-side:</u></h2>
+
+1. A servlet is a server-side Java program used to generate dynamic web content.
+
+2. Servlets are JVM-based server-side Java programs.

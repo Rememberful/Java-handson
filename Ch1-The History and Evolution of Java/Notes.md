@@ -62,3 +62,4 @@
     JVM ensures security, portability, and memory management.
     
     Java Source Code (.java) -> Bytecode (.class) -> Native Machine Code -> Program Output
+

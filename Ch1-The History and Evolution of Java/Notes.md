@@ -94,3 +94,15 @@
 | High performance     | The Java bytecode is highly optimized for speed of execution. |
 | Distributed          | Java was designed with the distributed environment of the Internet in mind. |
 | Dynamic              | Java programs carry run-time type information used to verify and resolve access to objects at run time. |
+
+<h2><u>The Evolution of	Java</u></h2>
+
+-> Java 5, 8, and 9 are the most revolutionary releases
+
+-> Java 8 → Lambdas & Streams
+
+-> Java 9 → Modules
+
+-> Java 11 → LTS, removal of legacy technologies
+
+-> Java balances innovation + backward compatibility

@@ -20,8 +20,16 @@
 
 1. The rise of the internet and the web created new requirements that lead directly to Java.
 
-<h2><u>The creation of Java:<u></h2>
+<h2><u>The creation of Java:</u></h2>
 
 1. Java was developed at Sun Microsystems in 1991 by James Gosling and his team.
 2. It was developed to solve portability problem
+
+<h2><u>The	C#	Connection</u></h2>
+
+1. C# is a Microsoft language for .NET that is heavily influenced by Java in syntax, design, and object-oriented concepts.
+
+<h2><u>How	Java Impacted the Internet:</u></h2>
+
+1. Java transformed the Internet by enabling secure, portable, and dynamic programs such as applets that could run on any platform.
 

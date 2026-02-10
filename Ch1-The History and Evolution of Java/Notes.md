@@ -63,3 +63,4 @@
     
     Java Source Code (.java) -> Bytecode (.class) -> Native Machine Code -> Program Output
 
+![alt text](image.png)

@@ -78,3 +78,19 @@
 1. A servlet is a server-side Java program used to generate dynamic web content.
 
 2. Servlets are JVM-based server-side Java programs.
+
+<h2><u>The Java Buzzwords</u></h2>
+
+| Feature               | Description |
+|----------------------|-------------|
+| Simple               | Java has a concise and cohesive set of features that makes it easy to learn and use. |
+| Secure               | Java provides a secure means of creating Internet applications. |
+| Portable             | Java programs can execute in any environment for which there is a Java runtime system. |
+| Object-oriented      | Java embodies the modern object-oriented programming philosophy. |
+| Robust               | Java encourages error-free programming by being strictly typed and performing run-time checks. |
+| Multithreaded        | Java provides integrated support for multithreaded programming. |
+| Architecture-neutral | Java is not tied to a specific machine or operating system architecture. |
+| Interpreted          | Java supports cross-platform code through the use of Java bytecode. |
+| High performance     | The Java bytecode is highly optimized for speed of execution. |
+| Distributed          | Java was designed with the distributed environment of the Internet in mind. |
+| Dynamic              | Java programs carry run-time type information used to verify and resolve access to objects at run time. |

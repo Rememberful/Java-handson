@@ -18,7 +18,10 @@
 
 <h2><u>The Stage is set for Java:</u></h2>
 
-The rise of the internet and the web created new requirements that lead directly to Java.
+1. The rise of the internet and the web created new requirements that lead directly to Java.
 
 <h2><u>The creation of Java:<u></h2>
+
+1. Java was developed at Sun Microsystems in 1991 by James Gosling and his team.
+2. It was developed to solve portability problem
 

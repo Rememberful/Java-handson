@@ -33,3 +33,4 @@
 
 1. Java transformed the Internet by enabling secure, portable, and dynamic programs such as applets that could run on any platform.
 
+<b> Note: </b> Applets are phased out now.

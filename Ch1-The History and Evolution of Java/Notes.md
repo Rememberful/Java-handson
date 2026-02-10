@@ -34,3 +34,15 @@
 1. Java transformed the Internet by enabling secure, portable, and dynamic programs such as applets that could run on any platform.
 
 <b> Note: </b> Applets are phased out now.
+
+<h2><u>Java’s Magic: The Bytecode</u></h2>
+
+1. Java compiler produces bytecode, not executable machine code.
+
+2. Bytecode runs on the JVM, which is part of the Java Runtime Environment (JRE).
+
+3. Platform independence is achieved because only the JVM is platform-specific.
+
+4. JVM provides security by running programs in a restricted sandbox environment.
+
+5. Java uses Just-In-Time (JIT) compilation to convert frequently used bytecode into native code for better performance.

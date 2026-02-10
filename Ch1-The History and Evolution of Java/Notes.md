@@ -46,3 +46,7 @@
 4. JVM provides security by running programs in a restricted sandbox environment.
 
 5. Java uses Just-In-Time (JIT) compilation to convert frequently used bytecode into native code for better performance.
+
+6. Platform independent: Java byte code(.class file)
+
+7. Platform dependent: JVM, JRE, JDK

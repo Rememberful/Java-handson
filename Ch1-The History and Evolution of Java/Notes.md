@@ -50,3 +50,15 @@
 6. Platform independent: Java byte code(.class file)
 
 7. Platform dependent: JVM, JRE, JDK
+
+8. Java is compiled to bytecode (compile-time) and interpreted by the JVM (run-time), making it both compiled and interpreted.
+
+9. Java follows 2 step compilation: 
+
+    Step 1: Source code is compiled into bytecode (platform independent).
+
+    Step 2: Bytecode is executed by JVM, which converts it into machine code.
+
+    JVM ensures security, portability, and memory management.
+    
+    Java Source Code (.java) -> Bytecode (.class) -> Native Machine Code -> Program Output

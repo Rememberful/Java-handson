@@ -64,3 +64,12 @@
     Java Source Code (.java) -> Bytecode (.class) -> Native Machine Code -> Program Output
 
 ![Description](images/image.png)
+
+<h2><u>Moving Beyond Applets</u></h2>
+
+1. Java applets and Web Start were removed due to lack of browser support and security issues; modern Java uses tools like jlink to create self-contained runtime images.
+
+<h2><u>A Faster Release Schedule:</u></h2>
+
+1. Feature Release (every 6 months)
+

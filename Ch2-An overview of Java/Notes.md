@@ -4,3 +4,16 @@
 
 <h2><u>Object-Oriented Programming</u></h2>
 
+Object-Oriented Programming (OOP) is a programming concept where programs are built using objects that represent real-world things.
+
+An object contains:
+
+    a. Data (variables / properties)
+
+    b. Methods (functions / behaviors)
+
+<h2><u>Two Programming Paradigms:</u></h2>
+
+1. Process-Oriented Model: Program organized around code (procedures/functions). Code acts on data.
+
+2. Object-Oriented Model: Program organized around data (objects).Data controls access to code.

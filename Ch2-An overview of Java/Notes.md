@@ -25,3 +25,10 @@ An object contains:
 Example: A car is treated as one object without thinking about its internal parts.
 
 2. Helps manage complexity in real-world systems and programs.
+
+<h2><u>Four Pillars of OOPs:</u></h2>
+
+    1. Encapsulation
+    2. Abstraction
+    3. Inheritance 
+    4. Polymorphism

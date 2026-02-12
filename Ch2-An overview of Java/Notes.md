@@ -35,3 +35,30 @@ Example: A car is treated as one object without thinking about its internal part
 
 <h2><u>Polymorphism, Encapsulation, and	Inheritance	Work Together: </u></h2>
 
+1. When combined, they create robust, scalable, reusable, and maintainable programs.
+2. Inheritance enables code reuse and supports hierarchical classification.
+3. Encapsulation protects data by exposing only the necessary interface
+4. Polymorphism allows objects to respond differently to the same method call.
+
+<h2><u>A First Simple Program: </u></h2>
+
+1. In Java, a source file is officially called a compilation unit.
+
+2. Java is case-sensitive.
+
+3. A basic program:
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+4. Java is case-sensitive. It means Example ≠ example and main ≠ Main.
+
+5. To	compile	the	Example	program, execute the	compiler,	javac,	specifying	the name of	the	source	file on	the	command	line and to	actually run	the	program, we	must use the Java application launcher called java:
+
+![Description](images/image.png)
+
+6. When	Java source	code is	compiled, each individual class	is put	into its own output	file named after the class and using the .class	extension.	

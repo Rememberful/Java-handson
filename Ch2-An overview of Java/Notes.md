@@ -99,3 +99,9 @@ public class Main2 {
 3. A variable is a named memory location that stores a value. The value of a variable can change during program execution. Variables must be declared before use in Java.
 
 4. General form of declaration of variable: type var-name;
+
+<h2><u>Two Control Statements: </u></h2>
+
+1. Control statements manage the flow of execution in a program.
+
+2. Two basic control statements introduced: if statement and for loop.

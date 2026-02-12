@@ -32,3 +32,6 @@ Example: A car is treated as one object without thinking about its internal part
     2. Abstraction
     3. Inheritance 
     4. Polymorphism
+
+<h2><u>Polymorphism, Encapsulation, and	Inheritance	Work Together: </u></h2>
+

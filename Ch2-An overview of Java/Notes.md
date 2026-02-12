@@ -95,3 +95,7 @@ public class Main2 {
 1. Here Main2 is the class name. 
 
 2. 'num' is the variable whose data type is 'int' and which is storing '20'.
+
+3. A variable is a named memory location that stores a value. The value of a variable can change during program execution. Variables must be declared before use in Java.
+
+4. General form of declaration of variable: type var-name;

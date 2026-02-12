@@ -62,3 +62,7 @@ public class Main {
 ![Description](images/image.png)
 
 6. When	Java source	code is	compiled, each individual class	is put	into its own output	file named after the class and using the .class	extension.	
+
+7. In above example 'Main' is an identifier that is the name of the class.
+
+8. Java programs begin execution by calling main() method. If main() is missing, code will compile successfully but will not run.

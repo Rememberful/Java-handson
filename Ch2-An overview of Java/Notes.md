@@ -105,3 +105,47 @@ public class Main2 {
 1. Control statements manage the flow of execution in a program.
 
 2. Two basic control statements introduced: if statement and for loop.
+
+<h2><u>Using Blocks of Code:</u></h2>
+
+1. Code inside {} is called a block of code.
+
+2. Variables declared inside a block are accessible within that block.
+Example:
+
+```java
+if(x>0){
+    int y = 10;
+}
+System.out.println(y); 
+```
+**Output:**
+
+```
+Error
+```
+
+3. Block prevents logical bugs.
+Example:
+```java
+if(x>0)
+    System.out.println("hey");  // conditional
+    System.out.println("Bye");  // executes everytime
+```
+
+4. We can create a standalone block. Example:
+```java
+{ 
+    int a = 10;
+}
+```
+
+5. Nested blocks created nested scopes. Example:
+```java
+{
+    int a = 10;
+    {
+        int b = 20; // inner blocks can access outer variables, but outer blocks can't access inner variables.
+    }
+}
+```

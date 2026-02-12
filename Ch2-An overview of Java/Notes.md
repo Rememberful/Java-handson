@@ -54,6 +54,11 @@ public class Main {
     }
 }
 ```
+**Output:**
+
+```
+Hello, World!
+```
 
 4. Java is case-sensitive. It means Example ≠ example and main ≠ Main.
 
@@ -66,3 +71,27 @@ public class Main {
 7. In above example 'Main' is an identifier that is the name of the class.
 
 8. Java programs begin execution by calling main() method. If main() is missing, code will compile successfully but will not run.
+
+<h2><u>A Second Short Program: </u></h2>
+
+```java
+public class Main2 {
+    public static void main(String[] args) {
+        int num; // this is declaration
+        num = 20; // this is definition
+        System.out.println(num);
+        System.out.println(num*2); // * is used for multiplication
+    }
+}
+```
+
+**Output:**
+
+```
+20
+40
+```
+
+1. Here Main2 is the class name. 
+
+2. 'num' is the variable whose data type is 'int' and which is storing '20'.

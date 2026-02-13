@@ -149,3 +149,16 @@ if(x>0)
     }
 }
 ```
+<h2><u>Lexical Issues:</u></h2>
+
+A Java program is made up of:
+<ul>
+<li>Whitespace
+<li>Identifiers
+<li>Literals
+<li>Comments
+<li>Operators
+<li>Separators
+<li>Keywords
+</ul>
+These are called the atomic elements (tokens) of Java.

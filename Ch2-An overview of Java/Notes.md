@@ -168,3 +168,7 @@ These are called the atomic elements (tokens) of Java.
 1. Keywords can't be used as identifiers.
 
 ![alt text](images/image1.png)
+
+<h2><u>The Java Class Libraries:</u></h2>
+
+1. Java = Language + Standard Libraries.

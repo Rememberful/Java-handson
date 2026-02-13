@@ -162,3 +162,9 @@ A Java program is made up of:
 <li>Keywords
 </ul>
 These are called the atomic elements (tokens) of Java.
+
+<h2><u>The Java Keywords:</u></h2>
+
+1. Keywords can't be used as identifiers.
+
+![alt text](images/image1.png)

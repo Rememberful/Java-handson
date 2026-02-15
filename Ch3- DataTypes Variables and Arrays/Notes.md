@@ -106,3 +106,4 @@ short num = 1000;
 short s = 32767;
 s++;   // becomes -32768
 ```
+Because of two’s complement representation.

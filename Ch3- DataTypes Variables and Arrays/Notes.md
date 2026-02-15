@@ -80,3 +80,29 @@ b++;   // becomes -128
 ```
 Because of two’s complement representation.
 
+<h2><u>short:</u></h2>
+
+1. short is a 16-bit signed primitive data type in Java used for memory-efficient storage of small integers, but arithmetic operations promote it to int.
+
+2. Default value: 0.
+
+3. Range formula for n bits:
+
+$$
+-2^{n-1} \text{ to } 2^{n-1} - 1
+$$
+
+4. Syntax:
+```java
+short s;
+short t;
+short num = 1000;
+```
+
+5. Java automatically promotes smaller integer types (byte, short) to int during arithmetic.
+
+6. short does not throw an error on overflow.
+```java
+short s = 32767;
+s++;   // becomes -32768
+```

@@ -107,3 +107,24 @@ short s = 32767;
 s++;   // becomes -32768
 ```
 Because of two’s complement representation.
+
+<h2><u>int:</u></h2>
+
+1. Its size is 32-bit and Signed.
+
+2. Default Value: 0 (for instance and static variables)
+
+3. Range formula for n bits:
+
+$$
+-2^{n-1} \text{ to } 2^{n-1} - 1
+$$
+
+4. int → stays int during arithmetic.
+
+5. Syntax:
+
+```java
+int i1;
+int i2, i3;
+```

@@ -147,3 +147,40 @@ long l1;
 long population = 8000000000L;
 ```
 
+<h2><u>Floating-Point Types:</u></h2>
+
+Floating-point types are used when:
+<ul>
+<li>Decimal values are required
+<li>Fractional precision is needed
+<li>Mathematical functions like sqrt(), sin(), cos() are used
+</ul>
+
+<h2><u>Types of Floating-Point Data in Java</u></h2>
+
+Java provides two floating-point types:
+
+| Type   | Size    | Precision              | Range (Approximate)                  |
+|--------|---------|------------------------|--------------------------------------|
+| float  | 32 bits | ~6–7 decimal digits    | ±1.4E−45 to ±3.4E38                  |
+| double | 64 bits | ~15–16 decimal digits  | ±4.9E−324 to ±1.8E308                |
+
+<h2><u>float:</u></h2>
+
+1. 32-bit single-precision and Follows IEEE 754 format.
+
+2. Example:
+```java
+float highTemp, lowTemp;
+float price = 19.99f; // f is compulsory!
+```
+
+<h2><u>double:</u></h2>
+
+1. 64-bit double-precision and default floating-point type in Java.
+
+2. Example:
+```java
+double radius = 10.0;
+double area = Math.PI * radius * radius;
+```

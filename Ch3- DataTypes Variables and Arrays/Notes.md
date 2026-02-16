@@ -128,3 +128,22 @@ $$
 int i1;
 int i2, i3;
 ```
+<h2><u>long:</u></h2>
+
+1. 64 bit and signed.
+
+2. Default Value: 0L
+
+3. Range formula for n bits:
+
+$$
+-2^{n-1} \text{ to } 2^{n-1} - 1
+$$
+
+4. Syntax:
+
+```java
+long l1;
+long population = 8000000000L;
+```
+

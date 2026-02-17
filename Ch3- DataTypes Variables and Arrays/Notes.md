@@ -200,3 +200,38 @@ double x = 5.5;  // Correct
 <li>You must explicitly use f for float, while for double d is optional</li></ul>
 
 2. Floating types can store Infinity, -Infinity, and NaN, but other primitive integers cannot.
+
+<h2><u>Characters:</u></h2>
+
+1.  char is used to store a single character in Java.
+
+2. Java uses unicode to represent characters.
+
+3. Keep in mind:
+
+<ul><li> Size: 16 bits (2 bytes)</li>
+<li> Range: 0 to 65,535 </li>
+<li> No negative values (unsigned type)</li>
+<ul>
+
+4. Syntax:
+
+```java
+char ch1 = 'Y';
+char ch2 = 88; // ACII values of 'X'
+```
+
+5. char can participate in arithmetic operations.
+Example:
+```java
+char ch1 = 'X';
+ch1++;
+```
+
+**Output:**
+
+```
+Y
+```
+
+6. Default (if char is a class variable): '\u0000' (null character)

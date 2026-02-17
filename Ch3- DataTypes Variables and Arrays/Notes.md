@@ -235,3 +235,39 @@ Y
 ```
 
 6. Default (if char is a class variable): '\u0000' (null character)
+
+<h2><u>Boolean:</u></h2>
+
+1. boolean is a primitive data type in Java.
+
+2. It can store only two values: true and false
+
+3.  boolean values are used in control statements:
+<ul>
+<li>if </li>
+<li>for </li>
+<li>while </li>
+<li>do-while </li>
+</ul>
+
+4. Instance boolean variables <u> default to: false. </u> While local boolean variables must be initialized manually.
+
+5. Boolean Cannot Be Converted to int
+```java
+int x = true; //Error
+```
+
+6. Short-Circuit Evaluation
+
+<ul>
+<li>&& and || are short-circuit operators. </li>
+<li>Java stops evaluating once the result is determined. </li>
+</ul>
+Example:
+
+```java
+if (false && someMethod()) {
+    // someMethod() will NOT execute
+}
+```
+

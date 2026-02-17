@@ -199,4 +199,4 @@ double x = 5.5;  // Correct
 <ul><li>All decimal numbers are double by default</li>
 <li>You must explicitly use f for float, while for double d is optional</li></ul>
 
-2. Floating types can store Infinity, -Infinity, and NaN, but pther primitive integers cannot.
+2. Floating types can store Infinity, -Infinity, and NaN, but other primitive integers cannot.

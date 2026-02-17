@@ -277,3 +277,23 @@ if (false && someMethod()) {
 }
 ```
 
+<h2><u>A Closer Look at Literals:</u></h2>
+
+1. A literal is a value that you type directly into your program.
+Example:
+```java
+int x = 10;
+```
+Here: 10 is a literal.
+
+2. Types of Literals in Java
+
+<ol type="a"><li>Integer Literals : int a = 100;</li>
+<li>Floating-Point Literals : float f = 3.14f;</li>
+<li>Character Literals : char ch = 'A';</li>
+<li>String Literals : String name = "John";</li>
+<li> Boolean Literals : boolean b = true;</li>
+<li> Null Literal : String s = null;</li>
+</ol>
+
+<b>Note:</b> null is not 0 — it means no reference

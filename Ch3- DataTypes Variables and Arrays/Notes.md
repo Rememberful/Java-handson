@@ -252,12 +252,18 @@ Y
 
 4. Instance boolean variables <u> default to: false. </u> While local boolean variables must be initialized manually.
 
-5. Boolean Cannot Be Converted to int
+5. Syntax:
+```java
+boolean b = true;
+boolean c = false;
+```
+
+6. Boolean Cannot Be Converted to int
 ```java
 int x = true; //Error
 ```
 
-6. Short-Circuit Evaluation
+7. Short-Circuit Evaluation
 
 <ul>
 <li>&& and || are short-circuit operators. </li>

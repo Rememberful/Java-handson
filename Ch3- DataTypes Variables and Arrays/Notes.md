@@ -209,10 +209,11 @@ double x = 5.5;  // Correct
 
 3. Keep in mind:
 
-<ul><li> Size: 16 bits (2 bytes)</li>
+<ul>
+<li> Size: 16 bits (2 bytes)</li>
 <li> Range: 0 to 65,535 </li>
 <li> No negative values (unsigned type)</li>
-<ul>
+</ul>
 
 4. Syntax:
 
@@ -220,7 +221,6 @@ double x = 5.5;  // Correct
 char ch1 = 'Y';
 char ch2 = 88; // ACII values of 'X'
 ```
-
 5. char can participate in arithmetic operations.
 Example:
 ```java

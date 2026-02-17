@@ -194,6 +194,9 @@ double x = 5.5;  // Correct
 3. Default value: 0.0d
 
 <b>Note:</b> <br>
-In Java:
+
+1. In Java:
 <ul><li>All decimal numbers are double by default</li>
-<li>You must explicitly use f for float, while for double d is optional</li>
+<li>You must explicitly use f for float, while for double d is optional</li></ul>
+
+2. Floating types can store Infinity, -Infinity, and NaN, but primitive integers cannot.

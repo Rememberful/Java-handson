@@ -175,6 +175,8 @@ float highTemp, lowTemp;
 float price = 19.99f; // f is compulsory!
 ```
 
+3. Default value: 0.0f
+
 <h2><u>double:</u></h2>
 
 1. 64-bit double-precision and default floating-point type in Java.
@@ -184,3 +186,14 @@ float price = 19.99f; // f is compulsory!
 double radius = 10.0;
 double area = Math.PI * radius * radius;
 ```
+3. Decimal literals are double by default:
+```java
+double x = 5.5;  // Correct
+```
+
+3. Default value: 0.0d
+
+<b>Note:</b> <br>
+In Java:
+<ul><li>All decimal numbers are double by default</li>
+<li>You must explicitly use f for float, while for double d is optional</li>

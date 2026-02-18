@@ -355,6 +355,8 @@ In Java, whole-number literals default to int, and floating-point literals (numb
 
 2. Escape Sequences (Very Important). Used for characters that cannot be typed directly.
 
+<center>
+
 | Escape | Meaning         |
 |--------|-----------------|
 | `\'`   | Single quote    |
@@ -366,6 +368,7 @@ In Java, whole-number literals default to int, and floating-point literals (numb
 | `\b`   | Backspace       |
 | `\f`   | Form feed       |
 
+</center>
 <h2><u>String Literals:</u></h2>
 
 1. String Literals: A sequence of characters enclosed in double quotes " ".

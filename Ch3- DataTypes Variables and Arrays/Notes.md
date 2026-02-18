@@ -384,8 +384,7 @@ World" //not allowed
 
 4. String is a reference type. It is not a primitive like int, char, or boolean.
 
-5. String Pool (VERY IMPORTANT)
-When we write:
+5. String Pool. When we write:
 ```java
 String s1 = "Hello";
 String s2 = "Hello";

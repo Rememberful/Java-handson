@@ -320,3 +320,20 @@ these are NOT allowed in Java:
 int x = 09;   // Compile-time error -> so not allowed
 int y = 08;   // Compile-time error -> so not allowed
 ```
+<h2><u>Floating-Point Literals:</u></h2>
+
+1. Represent numbers with a fractional (decimal) part. Examples: 0.2, 2.0, 3.4566
+
+2. Floating-point literals default to double. double = 64-bit and float = 32-bit.
+
+3. Compiler ignores underscores in floating point literals.
+```java
+double num = 9_423_497_862.0;
+double num = 9_423_497.1_0_9;
+```
+
+4. Both are correct:
+```java
+float x = 3.14F; //as 3.14 is double by default
+float y = (float) 3.14;
+```

@@ -337,3 +337,62 @@ double num = 9_423_497.1_0_9;
 float x = 3.14F; //as 3.14 is double by default
 float y = (float) 3.14;
 ```
+
+<h2><u>Boolean Literals:</u></h2>
+
+1. Boolean literals represent logical values. Only two possible values: true, false.
+
+2. Java does not automatically convert boolean to numeric types. true is NOT equal to 1 and false is NOT equal to 0.
+
+3. boolean is a primitive data type, and its size is JVM dependent.
+
+<b>Note:</b> 
+In Java, whole-number literals default to int, and floating-point literals (numbers with a decimal point or exponent) default to double.
+
+<h2><u>Character Literals:</u></h2>
+
+1. Represent a single character. Written inside single quotes: 'a', 'z', 'e'.
+
+2. Escape Sequences (Very Important). Used for characters that cannot be typed directly.
+
+| Escape | Meaning         |
+|--------|-----------------|
+| `\'`   | Single quote    |
+| `\"`   | Double quote    |
+| `\\`   | Backslash       |
+| `\n`   | New line        |
+| `\t`   | Tab             |
+| `\r`   | Carriage return |
+| `\b`   | Backspace       |
+| `\f`   | Form feed       |
+
+<h2><u>String Literals:</u></h2>
+
+1. String Literals: A sequence of characters enclosed in double quotes " ".
+
+2.  String literals cannot break across lines. 
+Example:
+```java
+"Hello
+World" //not allowed
+```
+
+3. In Java, strings are not character arrays. They are objects of the class - String.
+
+4. String is a reference type. It is not a primitive like int, char, or boolean.
+
+5. String Pool (VERY IMPORTANT)
+When we write:
+```java
+String s1 = "Hello";
+String s2 = "Hello";
+```
+<ul>
+<li>Only one object is created.
+
+<li>Stored in the String Constant Pool.
+
+<li>s1 and s2 reference the same object.
+</ul>
+6. Strings in Java are immutable.
+

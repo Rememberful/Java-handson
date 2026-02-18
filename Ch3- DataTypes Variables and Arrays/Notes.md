@@ -312,7 +312,7 @@ int x = 123_456_789;
 
 4. Java is strongly typed:
 <ul><li>Every literal has a type.</li>
-<li>Type checking happens at compile time.</li>></ul>
+<li>Type checking happens at compile time.</li></ul>
 
 5. 09  and 08 causes a compile-time error because numbers with a leading zero are treated as octal in Java, and octal numbers only allow digits from 0 to 7. It means:
 These are NOT allowed in Java:

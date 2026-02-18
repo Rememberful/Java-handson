@@ -297,3 +297,26 @@ Here: 10 is a literal.
 </ol>
 
 <b>Note:</b> null is not 0 — it means no reference
+
+<h2><u>Integer Literals:</u></h2>
+
+1. An integer literal is any whole number value.Examples: 1, 2, 3, 42. By default, integer literals are decimal (base 10).
+
+2. By default, integer literals are of type int
+
+3. Underscores in Integer Literals are used to improve readability. Compiler ignores underscores.
+Example:
+```java
+int x = 123_456_789;
+```
+
+4. Java is strongly typed:
+<ul><li>Every literal has a type.</li>
+<li>Type checking happens at compile time.</li>
+
+5. 09  and 08 causes a compile-time error because numbers with a leading zero are treated as octal in Java, and octal numbers only allow digits from 0 to 7. It means:
+These are NOT allowed in Java:
+```java
+int x = 09;   // Compile-time error -> so not allowed
+int y = 08;   // Compile-time error -> so not allowed
+```

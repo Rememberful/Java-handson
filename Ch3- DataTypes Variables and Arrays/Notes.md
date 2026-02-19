@@ -446,7 +446,7 @@ int x, y, z;
 int a = 5, b = 10, c = 15;
 ```
 </li>
-
+</ol>
 <h2><u>Dynamic Initialization:</u></h2>
 
 1. This means a variable can be initialized using any valid expression at the time it is declared. The initializer does not have to be a constant value.
@@ -463,3 +463,63 @@ int b = 10;
 int sum = a + b;   // Dynamic initialization
 ```
 
+<h2><u>The Scope and Lifetime of Variables:</u></h2>
+
+1. A scope defines where a variable is visible (accessible) in a program. A scope is created by a block.
+
+2. A block begins with { and ends with }. Every time you create a new block, you create a new scope.
+
+3. Types of Scope in Java:
+
+<ol type="a"><li> Class scope → variables declared inside a class </li>
+<li> Method scope → variables declared inside a method </li>
+</ol>
+
+4. A method’s scope:Begins at its opening { and Ends at its closing }
+
+5. Local variables: A variable declared inside a block is called a local variable. They are only accessible inside the block where they are declared. Cannot be accessed outside that block.
+Example:
+```java
+public static void main(String[] args) {
+    int x = 10;
+
+    if (x > 5) {
+        int y = 20;
+        System.out.println(x); // OK
+        System.out.println(y); // OK
+    }
+
+    // System.out.println(y); // ERROR: y not visible here
+}
+```
+
+6. Scopes can be nested (a block inside another block).
+<ul><li>
+Outer scope → encloses inner scope</li>
+<li>Inner scope → inside outer scope</li>
+</ul>
+
+Rule:
+<ul><li>
+Inner scope can access variables from outer scope.
+</li><li>
+Outer scope cannot access variables declared in inner scope.
+</li>
+</ul>
+
+7. You cannot use a variable before declaring it.
+```java
+count = 100; // ERROR
+int count;
+```
+8. The lifetime of a variable: Begins when its scope is entered, Ends when its scope is exited.
+
+9. cannot declare a variable in an inner block with the same name as a variable in an outer block.
+
+```java
+int x = 10;
+
+if (x > 5) {
+    int x = 20; // ERROR: duplicate variable name
+}
+```

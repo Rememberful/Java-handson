@@ -398,3 +398,68 @@ String s2 = "Hello";
 </ul>
 6. Strings in Java are immutable.
 
+<h2><u>Variables:</u></h2>
+
+1. A variable is the basic unit of storage in a Java program. It is used to store data that can be changed during program execution.
+
+2. A Java variable consists of:
+<ul>
+<li>Identifier (name)</li>
+<li>Type (kind of data)</li>
+<li>Optional initializer (starting value)</li>
+</ul>
+
+<h2><u>Declaring a Variable in Java:</u></h2>
+
+1. In Java, all variables must be declared before they are used.
+
+2. Declaration tells the compiler:
+<ul>
+<li>The type of data the variable will store</li>
+<li>The name (identifier) of the variable</li>
+</ul>
+
+3. Syntax:
+```java
+type identifier [= value] [, identifier [= value] …];
+```
+4. Examples of Variable Declarations:
+<ol type="a"><li>Single Variable (Without Initialization)
+
+```java
+int age;
+double salary;
+```
+</li>
+<li> Single Variable (With Initialization)
+
+```java
+int age = 25;
+double salary = 50000.50;
+```
+</li>
+
+<li>Multiple Variables of Same Type
+
+```java
+int x, y, z;
+int a = 5, b = 10, c = 15;
+```
+</li>
+
+<h2><u>Dynamic Initialization:</u></h2>
+
+1. This means a variable can be initialized using any valid expression at the time it is declared. The initializer does not have to be a constant value.
+
+2. Dynamic initialization happens at runtime.
+
+3. Dynamic initialization means assigning a value to a variable using an expression that is evaluated at runtime, rather than using a fixed constant.
+
+4. Dynamic Initialization:
+
+```java
+int a = 5;
+int b = 10;
+int sum = a + b;   // Dynamic initialization
+```
+

@@ -537,7 +537,7 @@ int count;
 ```
 8. The lifetime of a variable: Begins when its scope is entered, Ends when its scope is exited.
 
-9. cannot declare a variable in an inner block with the same name as a variable in an outer block.
+9. cannot declare a variable in an inner block with the same name as a variable in an outer block. 
 
 ```java
 int x = 10;
@@ -546,6 +546,8 @@ if (x > 5) {
     int x = 20; // ERROR: duplicate variable name
 }
 ```
+
+Although, it can be done for method scope.
 
 10. Example for rule: Inner scope can access variables from outer scope.
 
@@ -574,4 +576,51 @@ public class Main4 {
     }
 }
 ```
+
+<h2><u>Type Conversion and Casting:</u></h2>
+
+1. Type Conversion (Implicit / Automatic Conversion): Type conversion is the automatic conversion of one data type into another when the types are compatible.
+
+<ol type="a">
+<li>Also called Widening Conversion
+<li>Done automatically by Java
+<li>No data loss
+<li>Smaller data type → Larger data type
+</ol>
+
+<b>Order of Widening:</b> <i>byte → short → int → long → float → double</i>
+
+Example:
+```java
+int num = 100;
+long bigNum = num;   // int automatically converted to long
+float f = 10;  // int automatically converted to float
+```
+
+2. Type Casting (Explicit Conversion): Type casting is the manual conversion of one data type into another when the types are not compatible.
+
+<ol type="a">
+<li>Also called Narrowing Conversion
+<li>Must be done explicitly by programmer
+<li>May cause data loss
+<li>Larger data type → Smaller data type
+</ol>
+
+Syntax:
+```java
+dataType variable = (dataType) value;
+```
+
+Example:
+```java
+double d = 10.75;
+int i = (int) d;   // Explicit casting
+```
+
+Note: <br>
+byte → short → int → long → float → double
+char → int → long → float → double
+
+<h2><u>Automatic Type Promotion in Expressions:</u></h2>
+
 

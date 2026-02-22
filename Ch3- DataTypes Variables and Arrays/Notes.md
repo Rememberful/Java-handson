@@ -493,6 +493,29 @@ public static void main(String[] args) {
 }
 ```
 
+Example showing basic of local variable:
+```java
+public class Main {
+    public static void main(String[] args) {
+        int n = 10; // n is local variable
+        System.out.println(n);
+    }
+}
+```
+
+Example showing concept "They are only accessible inside the block where they are declared.":
+
+```java
+public class Main2 {
+    public static void main(String[] args) {
+        if(true){
+            int n = 10;
+            System.out.println(n);
+        }
+        System.out.println(n); // n is not accessible here
+    }
+}
+```
 6. Scopes can be nested (a block inside another block).
 <ul><li>
 Outer scope → encloses inner scope</li>

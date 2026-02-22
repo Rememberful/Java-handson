@@ -3,7 +3,8 @@ public class Main3 {
         int outerVar = 10; // outer scope
 
         if (outerVar > 5) {  // inner scope
-            System.out.println(outerVar); // ✅ Accessible
+            // int outerVar=1; // can't do 
+            System.out.println(outerVar); // Accessible
         }
     }
 }

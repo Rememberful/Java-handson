@@ -547,4 +547,31 @@ if (x > 5) {
 }
 ```
 
+10. Example for rule: Inner scope can access variables from outer scope.
+
+```java
+public class Main3 {
+    public static void main(String[] args) {
+        int outerVar = 10; // outer scope
+
+        if (outerVar > 5) {  // inner scope
+            System.out.println(outerVar); // Accessible
+        }
+    }
+}
+```
+
+11. Example for rule: Outer scope cannot access variables declared in inner scope.
+
+```java
+public class Main4 {
+    public static void main(String[] args) {
+        if (true) {  // inner scope
+            int innerVar = 20;
+            System.out.println(innerVar); // Accessible here
+        }
+        // System.out.println(innerVar); // ERROR! Not accessible
+    }
+}
+```
 

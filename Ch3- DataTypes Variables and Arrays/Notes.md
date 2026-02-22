@@ -623,4 +623,11 @@ char → int → long → float → double
 
 <h2><u>Automatic Type Promotion in Expressions:</u></h2>
 
+1. byte, short, char → promoted to int in arithmetic expressions
+
+2. int → long if combined with long; smaller → larger type promotion applies
+
+3. Mixed types follow widening rules: smaller → larger
+
+4. Always cast back if storing in smaller type: (byte)(expression)
 

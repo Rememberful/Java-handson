@@ -638,3 +638,157 @@ char → int → long → float → double
 2. Arrays can be of any data type and can be of one or more dimensions.
 
 3. Individual elements are accessed using an index.
+
+<h2><u>One-Dimensional Arrays:</u></h2>
+
+1. A one-dimensional array is essentially a list of like-typed variables. Each element in the array is of the same type (element type or base type).
+
+2. Declaration of Arrays:
+General Form:
+
+```java
+type arrayName[];
+```
+
+Example:
+```java
+int month_days[];
+```
+
+Declares month_days as an array of integers, but does not create actual storage yet.
+
+3. Dynamic Allocation Using new:Arrays in Java must be dynamically allocated after declaration. General form:
+```java
+arrayVar = new type[size];
+```
+
+Example:
+```java
+month_days = new int[12];
+```
+Allocates memory for 12 integers and links them to month_days.
+
+4. Two-step process to create an array:
+<ol type="a"><li>
+Declare the array variable.</li>
+<li>Allocate memory with new and link it to the variable.</li>
+</ol>
+
+5. Arrays can also be declared and allocated in one step:
+```java
+int month_days[] = new int[12];
+```
+
+6. Accessing Array Elements-> Use indexing to access elements:
+```java
+arrayVar[index]
+```
+Example:
+```java
+month_days[1] = 28;      // assigns 28 to second element
+System.out.println(month_days[3]); // prints 4th element
+```
+
+7. Arrays can be initialized at declaration using curly braces {}:
+Example:
+```java
+int month_days[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+```
+8. Attempting to access elements outside valid range causes a runtime error.
+
+9. Default initialization depends on element type (numeric → 0, boolean → false, reference → null).
+
+10. 1D Array Creation – Methods
+
+<ol type="a">
+<li>Two-Step Declaration and Allocation
+
+Step 1 – Declare the array variable:
+```java
+int numbers[];  // Declare array of integers
+```
+Step 2 – Allocate memory using new:
+```java
+numbers = new int[5];  // Allocate array with 5 elements
+```
+</li>
+
+<li>Declaration and Allocation in a Single Step
+
+```java
+int numbers[] = new int[5];  // Declare and allocate together
+```
+</li>
+
+<li>Declaration with Initialization (Array Initializer)
+
+```java
+int numbers[] = {10, 20, 30, 40, 50};
+```
+</li>
+
+<li> Using new with Initialization
+
+```java
+int numbers[] = new int[] {10, 20, 30, 40, 50};
+```
+</li>
+
+<li>
+Declaring Array Without Specifying Size (Later Allocation)
+
+```java
+int numbers[];
+// Memory allocation done later
+numbers = new int[10];
+```
+</li>
+</ol>
+
+11. Default values: Default values apply only when memory is allocated using new.
+
+<ol type="i">
+<li>Numeric Types
+
+| Data Type | Default Value |
+|-----------|---------------|
+| byte      | 0             |
+| short     | 0             |
+| int       | 0             |
+| long      | 0L            |
+| float     | 0.0f          |
+| double    | 0.0           |
+| char      | `\u0000` (null character) |
+
+**Example:**
+```java
+int numbers[] = new int[3];
+System.out.println(numbers[0]); // Output: 0
+```
+</li>
+
+<li>
+ Boolean Type
+
+| Data Type | Default Value |
+|-----------|---------------|
+| boolean   | false         |
+
+**Example:**
+```java
+boolean flags[] = new boolean[2];
+System.out.println(flags[1]); // Output: false
+```
+
+<li>
+Reference Types (Objects)
+
+| Data Type      | Default Value |
+|----------------|---------------|
+| Any class type | null          |
+
+**Example:**
+```java
+String names[] = new String[3];
+System.out.println(names[0]); // Output: null
+```

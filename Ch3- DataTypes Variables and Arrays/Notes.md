@@ -633,7 +633,7 @@ char → int → long → float → double
 
 <h2><u>Arrays:</u></h2>
 
-1. An arrya is a  group of variables of the same type accessed using a common name.
+1. An array  is a  group of variables of the same type accessed using a common name.
 
 2. Arrays can be of any data type and can be of one or more dimensions.
 

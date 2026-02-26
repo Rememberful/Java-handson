@@ -792,3 +792,38 @@ Reference Types (Objects)
 String names[] = new String[3];
 System.out.println(names[0]); // Output: null
 ```
+11. Example 1 for arrays:
+```java
+public class Main5 {
+    public static void main(String[] args) {
+        int[] arr = new int[5];
+        arr[0] = 88;
+        arr[1] = 89;
+        arr[2] = 90;
+        arr[3] = 91;
+        arr[4] = 94;
+        System.out.println(arr);
+    }
+}
+```
+
+12. Example 2 for arrays: printing the elements of array.
+```java
+public class Main5 {
+    public static void main(String[] args) {
+        int[] arr = new int[5];
+        arr[0] = 88;
+        arr[1] = 89;
+        arr[2] = 90;
+        arr[3] = 91;
+        arr[4] = 94;
+        System.out.println(arr[3]);
+    }
+}
+```
+
+## Output
+
+```
+91
+```

@@ -882,4 +882,14 @@ public class Main7 {
 ```
 Average is: 3
 ```
+16. In Java:
+<ul>
+<li>Arrays are stored in heap memory</li>
+<li>arr is a reference variable</li>
+<li>The actual array object is stored in the heap</li>
+</ul>
 
+17. How Index Access Works? When we write: arr[3] <br>
+Java internally calculates:  <i>Base Address + (index × size_of_type)</i>
+
+It directly jumps to that memory location. That’s why array access time is: O(1) — Constant Time

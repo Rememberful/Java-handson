@@ -6,6 +6,7 @@ public class Main5 {
         arr[2] = 90;
         arr[3] = 91;
         arr[4] = 94;
-        System.out.println(arr[3]);
+        // System.out.println(arr[3]);
+        System.out.println(arr[5]);
     }
 }

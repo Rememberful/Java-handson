@@ -827,3 +827,59 @@ public class Main5 {
 ```
 91
 ```
+
+13. Example 3 for arrays: accesing index which is not in range
+```java
+public class Main5 {
+    public static void main(String[] args) {
+        int[] arr = new int[5];
+        arr[0] = 88;
+        arr[1] = 89;
+        arr[2] = 90;
+        arr[3] = 91;
+        arr[4] = 94;
+        System.out.println(arr[5]);
+    }
+}
+```
+## Output
+
+```
+Index 5 out of bounds for length 5
+```
+
+14. Example: using the elements of array in code.
+```java
+public class Main6 {
+    public static void main(String[] args) {
+        int[] arr = {55,66,77,88,99};
+        System.out.println("The element at 3rd index is: " + arr[3]);
+    }
+}
+```
+## Output
+
+```
+The element at 3rd index is: 88
+```
+
+15. Example: average of the elements of the array.
+```java
+// Average of the elements of the array
+public class Main7 {
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4,5};
+        int result = 0;
+        for(int i = 0; i<arr.length;i++){
+            result += arr[i]; // or, result = result + arr[i]
+        }
+        System.out.println("Average is: " + result/arr.length);
+    }
+}
+```
+## Output
+
+```
+Average is: 3
+```
+

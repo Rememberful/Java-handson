@@ -1150,9 +1150,142 @@ Sum of column 2 = 15
 Sum of column 3 = 18
 ```
 16. Example: Transpose of a Matrix
+```java
+//Transpose of a Matrix
+public class Main14 {
+    public static void main(String[] args) {
+        int[][] arr = {
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+        };
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i+1; j < arr.length; j++) {
+                //logic to swap
+                int temp = arr[i][j];
+                arr[i][j] = arr[j][i];
+                arr[j][i] = temp;
+            }
+        }
+        //Printing the new transposed array
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[0].length; j++) {
+                System.out.print(arr[i][j]+ " ");
+            }
+            System.err.println();
+        }
+    }
+}
+```
+## Output
+
+```
+1 4 7 
+2 5 8
+3 6 9
+```
 17. Example: Matrix Addition
+```java
+public class Main15 {
+    public static void main(String[] args) {
+        int[][] a = {{1,1,1},{1,1,1},{1,1,1}};
+        int[][] b = {{1,1,1},{1,1,1},{1,1,1}};
+        // New matrix
+        int[][] c = new int[a.length][a[0].length];
+        // Adding
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[0].length; j++) {
+                c[i][j] = a[i][j]+b[i][j];
+            }
+        }
+        //printing the sum
+        for (int i = 0; i < c.length; i++) {
+            for (int j = 0; j < c[0].length; j++) {
+                System.out.print(c[i][j]+ " ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+## Output
+
+```
+2 2 2 
+2 2 2
+2 2 2
+```
 18. Example: Matrix Subtraction
+```java
+//Matrix Subtraction
+public class Main16 {
+    public static void main(String[] args) {
+        int[][] a = {{1,1,1},{1,1,1},{1,1,1}};
+        int[][] b = {{1,1,1},{1,1,1},{1,1,1}};
+        // New matrix
+        int[][] c = new int[a.length][a[0].length];
+        // Subtracting
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[0].length; j++) {
+                c[i][j] = a[i][j]-b[i][j];
+            }
+        }
+        //printing the difference
+        for (int i = 0; i < c.length; i++) {
+            for (int j = 0; j < c[0].length; j++) {
+                System.out.print(c[i][j]+ " ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+## Output
+
+```
+0 0 0 
+0 0 0
+0 0 0
+```
 18. Example: Matrix Multiplication  
+```java
+public class Main17 {
+    public static void main(String[] args) {
+        int[][] matrix1 = {
+            {1, 2, 3},
+            {4, 5, 6}
+        };
+        int[][] matrix2 = {
+            {7, 8},
+            {9, 10},
+            {11, 12}
+        };
+        int[][] result = new int[matrix1.length][matrix2[0].length];
+        // Logic
+        for (int i = 0; i < matrix1.length; i++) {
+            for (int j = 0; j < matrix2[0].length; j++) {
+                for (int k = 0; k < matrix2.length; k++) {
+                    result[i][j] += matrix1[i][k]*matrix2[k][j];
+                }
+            }
+        }
+        //Printing
+        for (int i = 0; i < result.length; i++) {
+            for (int j = 0; j < result[0].length; j++) {
+                System.out.print(result[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+## Output
+
+```
+58 64 
+139 154 
+```
+
 19. Example: Scalar Multiplication
 20. Example: Check if Matrix is Symmetric
 21. Example: Determinant of a Matrix

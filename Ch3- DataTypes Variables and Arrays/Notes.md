@@ -935,6 +935,97 @@ This means:
 <li>This is called a Jagged (Irregular) Array</li>
 </ul>
 
-7. 
+Example:
+```java
+int[][] arr = {
+    {1},
+    {2,3},
+    {4,5,6}
+};
+```
 
+7. Looping through 2D array:
+```java
+for(int i = 0; i < arr.length; i++) {
+    for(int j = 0; j < arr[i].length; j++) {
+        System.out.print(arr[i][j] + " ");
+    }
+}
+```
+Using for-each loop:
+```java
+for(int[] row : arr) {
+    for(int element : row) {
+        System.out.print(element + " ");
+    }
+}
+```
+8. Allocating Memory Separately. You can allocate only the first dimension:
+```java
+int[][] arr = new int[4][];
+```
+Then allocate rows separately:
+```java
+arr[0] = new int[5];
+arr[1] = new int[3];
+arr[2] = new int[7];
+arr[3] = new int[2];
+```
+9. Memory Allocation Rule: You must allocate leftmost dimension first.
+
+Valid: int[][] arr = new int[4][]; <br>
+Invalid: int[][] arr = new int[][5];  
+
+10. Example: Taking user input to create the Multidimensional array and then printing it.
+```java
+import java.util.Scanner;
+
+public class Main8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        //Taking user input for rows and columns
+        System.err.println("Enter the number of rows:");
+        int rows = sc.nextInt();
+        System.err.println("Enter the number of columns:");
+        int cols = sc.nextInt();
+
+        //Creating the array
+        int[][] arr = new int[rows][cols];
+
+        //Looping to take the user input
+        System.err.println("Enter the elements now... ");
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                arr[i][j] = sc.nextInt();
+            }
+        }
+
+        // Printing the array
+        System.out.println("Printing the entered element...");
+        for(int i = 0; i<arr.length; i++){
+            for(int j = 0; j<arr[i].length;j++){
+                System.out.print(arr[i][j]+ " ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+## Output
+
+```
+Enter the number of rows:
+2
+Enter the number of columns:
+2
+Enter the elements now... 
+1
+2
+3
+4
+Printing the entered element...
+1 2
+3 4
+```
 

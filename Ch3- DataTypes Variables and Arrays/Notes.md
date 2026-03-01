@@ -897,3 +897,44 @@ Average is: 3
 Java internally calculates:  <i>Base Address + (index × size_of_type)</i>
 
 It directly jumps to that memory location. That’s why array access time is: O(1) — Constant Time
+
+<h2><u>Multidimensional Arrays:</u></h2>
+
+1. It's an array that contains other arrays.
+```java
+int[][] arr = {{1,2,3},{4,5,6}};
+```
+
+2. Internally, arr -> [reference for row0, reference for row1]
+
+3. Syntax:
+```java
+data_type[][] = new data_type[rows][columns];
+```
+Example:
+```java
+int[][] arr = new int[3][5]; // 3 rows and 5 columns
+```
+
+4. Accessing elements: To access elements, array_name[row][column]
+Example:
+```java
+System.out.println(arr[1][2]); //2nd row, 3rd column
+```
+
+5. Length of rows and columns: 
+```java
+System.out.println(arr.length); //length of rows
+System.out.println(arr[0].lenght); //column in row 0
+```
+
+6. Java 2D arrays are NOT true matrices. They are arrays of arrays.
+This means:
+<ul>
+<li>Rows can have different lengths</li>
+<li>This is called a Jagged (Irregular) Array</li>
+</ul>
+
+7. 
+
+

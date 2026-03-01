@@ -792,7 +792,11 @@ Reference Types (Objects)
 String names[] = new String[3];
 System.out.println(names[0]); // Output: null
 ```
+
+</li>
+</ol>
 11. Example 1 for arrays:
+
 ```java
 public class Main5 {
     public static void main(String[] args) {

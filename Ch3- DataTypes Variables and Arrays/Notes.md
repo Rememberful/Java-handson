@@ -1029,3 +1029,137 @@ Printing the entered element...
 3 4
 ```
 
+11. Example: sum of all elements in 2D array
+```java
+public class Main9 {
+    public static void main(String[] args) {
+        int[][] arr = {{1,2,3},{4,5,6}};
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                sum+=arr[i][j];
+            }
+        }
+        System.out.println(sum);
+    }
+}
+```
+## Output
+
+```
+21
+```
+
+12. Example: Largest element of 2D array.
+```java
+public class Main10 {
+    public static void main(String[] args) {
+        int[][] arr = {{1,2,3},{4,5,6},{44,3,2}};
+        int max = arr[0][0];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if(arr[i][j]>max){
+                    max=arr[i][j];
+                }
+            }
+        }
+        System.out.println("Largest element is: "+ max);
+    }
+}
+```
+## Output
+
+```
+Largest element is: 44
+```
+
+13. Example: Smallest element of 2D array
+```java
+public class Main11 {
+    public static void main(String[] args) {
+        int[][] arr = {{1,2,3},{4,5,6},{44,3,2}};
+        int min = arr[0][0];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if(arr[i][j]<min){
+                    min=arr[i][j];
+                }
+            }
+        }
+        System.out.println("Smallest element is: "+ min);
+    }
+}
+```
+## Output
+
+```
+Smallest element is: 1
+```
+
+14. Example: Row wise sum
+```java
+public class Main12 {
+    public static void main(String[] args) {
+        int[][] arr = {
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+        };
+        for (int i = 0; i < arr.length; i++) {
+            int sum = 0;
+            for (int j = 0; j < arr[i].length; j++) {
+                sum +=arr[i][j];
+            }
+            System.out.println("Sum of row " + (i+1) +" = " + sum);
+        }
+    }
+}
+
+```
+## Output
+
+```
+Sum of row 1 = 6
+Sum of row 2 = 15
+Sum of row 3 = 24
+```
+15. Example: Column-wise Sum
+```java
+public class Main13 {
+    public static void main(String[] args) {
+        int[][] arr = {
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+        };
+        for (int i = 0; i < arr[0].length; i++) {
+            int sum = 0;
+            for (int j = 0; j <arr.length; j++) {
+                sum+=arr[j][i];
+            }
+            System.out.println("Sum of column " + (i + 1) + " = " + sum);
+        }
+    }
+}
+```
+## Output
+
+```
+Sum of column 1 = 12
+Sum of column 2 = 15
+Sum of column 3 = 18
+```
+16. Example: Transpose of a Matrix
+17. Example: Matrix Addition
+18. Example: Matrix Subtraction
+18. Example: Matrix Multiplication  
+19. Example: Scalar Multiplication
+20. Example: Check if Matrix is Symmetric
+21. Example: Determinant of a Matrix
+22. Example: Trace of a Matrix
+23. Example: Matrix Inversion
+24. Example: Search in a Matrix
+25. Example: Spiral Traversal
+26. Example: Check if Matrix is Sparse
+27. Example: Check if Upper/Lower Triangular
+

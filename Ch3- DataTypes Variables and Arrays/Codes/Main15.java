@@ -11,7 +11,6 @@ public class Main15 {
                 c[i][j] = a[i][j]+b[i][j];
             }
         }
-
         //printing the sum
         for (int i = 0; i < c.length; i++) {
             for (int j = 0; j < c[0].length; j++) {

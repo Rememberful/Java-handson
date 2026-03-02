@@ -1322,8 +1322,88 @@ public class Main18 {
 ```
 
 20. Example: Check if Matrix is Symmetric
+```java
+public class Main19 {
+    public static void main(String[] args) {
+        int[][] matrix = {
+            {1, 2, 3},
+            {2, 4, 5},
+            {3, 5, 6}
+        };
+
+        int n = matrix.length;
+        boolean isSymmetric = true;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix.length; j++) {
+                if(matrix[i][j] != matrix[j][i]){
+                    isSymmetric=false;
+                    break;
+                }
+            }
+        }
+
+        if(isSymmetric){
+            System.out.println("Yes, Symmetric!");
+        }
+        else{
+            System.out.println("Not Symmetric");
+        }
+    }
+}
+```
+## Output
+
+```
+Yes, Symmetric!
+```
+
 21. Example: Determinant of a Matrix
+```java
+public class Main20 {
+    public static void main(String[] args) {
+        int[][] matrix = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+        int determinant = 
+              matrix[0][0] * (matrix[1][1] * matrix[2][2] - matrix[1][2] * matrix[2][1])
+            - matrix[0][1] * (matrix[1][0] * matrix[2][2] - matrix[1][2] * matrix[2][0])
+            + matrix[0][2] * (matrix[1][0] * matrix[2][1] - matrix[1][1] * matrix[2][0]);
+        System.out.println("Determinant of the matrix is: " + determinant);
+    }
+}
+```
+## Output
+
+```
+Determinant of the matrix is: 0
+```
+
 22. Example: Trace of a Matrix
+```java
+//Trace of a Matrix
+public class Main21 {
+    public static void main(String[] args) {
+        int[][] matrix = {
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+        };
+        int trace=0;
+        for (int i = 0; i < matrix.length; i++) {
+            trace += matrix[i][i];
+        }
+        System.out.println("Trace is: " + trace);
+    }
+}
+```
+## Output
+
+```
+Trace is: 15
+```
+
 23. Example: Matrix Inversion
 24. Example: Search in a Matrix
 25. Example: Spiral Traversal

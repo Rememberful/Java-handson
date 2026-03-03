@@ -26,6 +26,7 @@ They can also be classified by operands:
 | Ternary | 3 operands  |
 
 </center>
+
 <h2><u>Arithmetic Operators:</u></h2>
 
 Used for mathematical calculations.
@@ -208,9 +209,216 @@ Value of b: 10
 Value of a now is: 9
 ```
 
+<h2><u>Unary Operators:</u></h2>
+
+Operate on a single operand.
+
+<Center>
+
+| Operator | Meaning     |
+| -------- | ----------- |
+| `++`     | Increment   |
+| `--`     | Decrement   |
+| `+`      | Unary plus  |
+| `-`      | Unary minus |
+| `!`      | Logical NOT |
+| `~`      | Bitwise NOT |
+
+</center>
+
+<h2><u>Assignment Operators:</u></h2>
+
+Used to assign values.
+
+Basic Assignment
+```java
+x = 1;
+```
+Compound Assignment
+
+<center>
+
+| Operator | Equivalent To              |                  |
+| -------- | -------------------------- | ---------------- |
+| `+=`     | x = x + value              |                  |
+| `-=`     | x = x - value              |                  |
+| `*=`     | x = x * value              |                  |
+| `/=`     | x = x / value              |                  |
+| `%=`     | x = x % value              |                  |
+| `&=` `   | =` `^=` `<<=` `>>=` `>>>=` | Bitwise compound |
+</center>
+
+Chain Assignment:
+
+```java
+int x, y, z;
+x = y = z = 100;
+```
+Assignment evaluates right to left.
+
+<h2><u>Relational Operators:</u></h2>
+
+Used for comparisons.
+
+<center>
+
+| Operator | Meaning               |
+| -------- | --------------------- |
+| `>`      | Greater than          |
+| `<`      | Less than             |
+| `>=`     | Greater than or equal |
+| `<=`     | Less than or equal    |
+| `==`     | Equal                 |
+| `!=`     | Not equal             |
+
+</center>
+
+Key Points: 
+<ul>
+<li>Result is always boolean.</li>
+<li>Used in if, while, loops.</li>
+<li>== checks equality.</li>
+<li>= is assignment.</li>
+</ul>
+
+<h2><u>Logical Operators:</u></h2>
+
+Used with boolean values.
+
+<center>
+
+| Operator | Meaning               |
+| -------- | --------------------- |
+| && | Logical AND (short-circuit) |
+| ! | Logical NOT  | 
+| & | Boolean AND |
+| ^ | Boolean XOR |
+
+</center>
+
+Best Practice
+
+<ul>
+<li>Use && and || for logical conditions.</li>
+<li>Use & and | mainly for bitwise operations.</li>
+</ul>
+
+<h2><u>Ternary Operator ( ?: )</u></h2>
+
+Shorthand for if-else.
+
+Syntax: 
+
+```java
+condition ? expression1 : expression2;
+```
+
+Example:
+
+```java
+int max = (a > b) ? a : b;
+```
+
+Example: Nested 
+
+```java
+result = ((a > b) ? (a > c) ? a : c : (b > c) ? b : c);
+```
+
+<h2><u>Logical Operators:</u></h2>
+
+Operate at the bit level.
+
+Basic Bitwise Operators:
+
+<center>
+
+| Operator | Meaning               |
+| -------- | --------------------- |
+| & |AND |
+| ^ | XOR |
+| ~ | NOT(complement) |
+
+</center>
+
+Shift Operators:
+
+<center>
+
+| Operator | Meaning                      |
+| -------- | ---------------------------- |
+| `<<`     | Left shift                   |
+| `>>`     | Right shift (sign preserved) |
+| `>>>`    | Unsigned right shift         |
+
+</center>
+
+<h2><u>instanceof Operator</u></h2>
+
+Used for type checking.
+
+Syntax:
+```java
+object instanceof ClassName
+```
+
+Example
+```
+String str = "Hello";
+str instanceof String  → true
+```
+
+Checks:
+<ul>
+<li>Class</li>
+
+<li>Subclass</li>
+
+<li>Interface</li>
+</ul>
+
+<h2><u>Operator Precedence in Java:</u></h2>
+
+Operator precedence determines which operator is evaluated first when multiple operators appear in the same expression. 
+
+-> Higher precedence operators are evaluated before lower precedence ones.
+
+-> If two operators have the same precedence, then associativity decides the order of evaluation.
+
+Java Operator Precedence (Highest → Lowest):
+
+| Level | Operators                          | Associativity   |              |              |
+| ----- | ---------------------------------- | --------------- | ------------ | ------------ |
+| 1     | Postfix `expr++`, `expr--`         | Left → Right    |              |              |
+| 2     | Unary `++ -- + - ~ !`              | Right → Left    |              |              |
+| 3     | Multiplicative `* / %`             | Left → Right    |              |              |
+| 4     | Additive `+ -`                     | Left → Right    |              |              |
+| 5     | Shift `<< >> >>>`                  | Left → Right    |              |              |
+| 6     | Relational `< > <= >= instanceof`  | Left → Right    |              |              |
+| 7     | Equality `== !=`                   | Left → Right    |              |              |
+| 8     | Bitwise AND `&`                    | Left → Right    |              |              |
+| 9     | Bitwise XOR `^`                    | Left → Right    |              |              |
+| 10    | Bitwise OR `                       | `               | Left → Right |              |
+| 11    | Logical AND `&&`                   | Left → Right    |              |              |
+| 12    | Logical OR `                       |                 | `            | Left → Right |
+| 13    | Ternary `?:`                       | Right → Left    |              |              |
+| 14    | Assignment `= += -= *= /= %= &= ^= | = <<= >>= >>>=` | Right → Left |              |
 
 
+Associativity:
 
+Left-to-Right (Most Operators)
+```java
+int result = 20 / 5 * 2;
+```
+Right-to-Left (Assignment & Unary)
+```java
+int a, b, c;
+a = b = c = 10;
+```
 
+Parentheses Override Precedence: Parentheses () increase precedence.
 
-
+```java
+int result = (10 + 5) * 2;
+```

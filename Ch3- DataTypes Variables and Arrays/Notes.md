@@ -1660,7 +1660,7 @@ catch (var e)  // Not allowed
 </li>
 </ol>
 
-7. Where var CANNOT Be Used
+7. Important rules for var:
 <ul>
 <li>Must be initialized at declaration</li>
 <li>Type is inferred from initializer</li>

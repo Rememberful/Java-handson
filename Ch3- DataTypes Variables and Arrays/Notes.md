@@ -1405,8 +1405,280 @@ Trace is: 15
 ```
 
 23. Example: Matrix Inversion
-24. Example: Search in a Matrix
-25. Example: Spiral Traversal
-26. Example: Check if Matrix is Sparse
-27. Example: Check if Upper/Lower Triangular
+```java
+public class Main23 {
+    public static void main(String[] args) {
+         double[][] matrix = {
+            {2, -1, 0},
+            {1, 2, -1},
+            {3, 0, 1}
+        };
 
+        double det = determinant(matrix);
+
+        if (det == 0) {
+            System.out.println("Inverse does not exist (Determinant is 0)");
+            return;
+        }
+
+        double[][] adj = adjoint(matrix);
+        double[][] inverse = new double[3][3];
+
+        // Inverse = adjoint / determinant
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                inverse[i][j] = adj[i][j] / det;
+            }
+        }
+
+        System.out.println("Inverse of the matrix:");
+        printMatrix(inverse);
+    }
+
+    // Function to calculate determinant of 3x3 matrix
+    static double determinant(double[][] m) {
+        return m[0][0] * (m[1][1]*m[2][2] - m[1][2]*m[2][1])
+             - m[0][1] * (m[1][0]*m[2][2] - m[1][2]*m[2][0])
+             + m[0][2] * (m[1][0]*m[2][1] - m[1][1]*m[2][0]);
+    }
+
+    // Function to calculate adjoint
+    static double[][] adjoint(double[][] m) {
+        double[][] adj = new double[3][3];
+
+        adj[0][0] =  (m[1][1]*m[2][2] - m[1][2]*m[2][1]);
+        adj[0][1] = -(m[0][1]*m[2][2] - m[0][2]*m[2][1]);
+        adj[0][2] =  (m[0][1]*m[1][2] - m[0][2]*m[1][1]);
+
+        adj[1][0] = -(m[1][0]*m[2][2] - m[1][2]*m[2][0]);
+        adj[1][1] =  (m[0][0]*m[2][2] - m[0][2]*m[2][0]);
+        adj[1][2] = -(m[0][0]*m[1][2] - m[0][2]*m[1][0]);
+
+        adj[2][0] =  (m[1][0]*m[2][1] - m[1][1]*m[2][0]);
+        adj[2][1] = -(m[0][0]*m[2][1] - m[0][1]*m[2][0]);
+        adj[2][2] =  (m[0][0]*m[1][1] - m[0][1]*m[1][0]);
+
+        return adj;
+    }
+
+    // Function to print matrix
+    static void printMatrix(double[][] m) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.printf("%.3f ", m[i][j]);
+            }
+            System.out.println();
+        }
+    }
+}
+```
+## Output
+
+```
+0.250 0.125 0.125 
+-0.500 0.250 0.250
+-0.750 -0.375 0.625
+```
+
+24. Example: Search in a Matrix
+```java
+public class Main22 {
+    public static void main(String[] args) {
+    int[][] matrix = {
+        {1,2,3},
+        {4,5,6},
+        {7,8,9}
+    };
+    int key = 6;
+    boolean found = false;
+    for (int i = 0; i < matrix.length; i++) {
+        for (int j = 0; j < matrix[i].length; j++) {
+            if(matrix[i][j] == key){
+                System.out.println("Found at: (" + i + "," + j + ")");
+                found = true;
+                break;
+            }
+        }
+    }
+    if(!found){
+        System.out.println("Doesn't exists");
+    }
+ }   
+}
+```
+## Output
+
+```
+Found at: (1,2)
+```
+
+<h2><u>Introducing Type Inference with Local Variables:</u></h2>
+
+1. Local Variable Type Inference (LVTI) introduced in:
+<ul>
+<li>Java 10</li>
+<li>JDK 10</li>
+</ul>
+
+2. Java is a statically typed language. Traditionally, every variable must have an explicit type declaration.
+
+3. From Java 10, the keyword var allows the compiler to infer the type automatically. Type inference happens at compile time, not runtime.
+Example:
+```java
+int x = 20; // Before java 10
+var x = 20; // Java 10+
+```
+In both cases, x is of type int.
+
+4. Local Variable Type Inference (LVTI) allows:
+<ul>
+<li>Skipping type declaration for local variables</li>
+<li>Compiler determines the type from the initializer</li>
+</ul>
+Syntax:
+
+```java
+var variableName = value;
+```
+
+Important:
+<ul>
+<li>var is a context-sensitive keyword</li>
+<li>It is not a datatype</li>
+<li>It is a placeholder for inferred type</li>
+</ul>
+
+5. Where Can var Be Used?
+
+<ol type="a">
+<li>Local Variables
+
+```java
+var x = 10;
+```
+</li>
+<li>
+Static / Instance Initialization Blocks
+
+```java
+static {
+    var msg = "Hello";
+}
+```
+</li>
+
+<li>Enhanced For Loop
+
+```java
+for (var x : arr)
+```
+</li>
+
+<li>Traditional For Loop
+
+```java
+for (var i = 0; i < 5; i++)
+```
+</li>
+
+<li>Storing Method Return Value
+
+```java
+var result = obj.method();
+```
+</li>
+
+<li> Arrays
+
+```java
+var arr = new int[10];
+```
+</li>
+</ol>
+
+6. Where var CANNOT Be Used
+
+<ol type="a">
+<li> Class Fields
+
+```java
+var x;   // Not allowed
+```
+</li>
+
+<li> Unitialised Variables
+
+```java
+var x;   // Error - Initializer is mandatory
+```
+</li>
+
+<li> Method Parameters
+
+```java
+void show(var x)  // Error
+```
+
+</li>
+
+<li> Method Return Type
+
+```java
+public var show()   // Error
+```
+
+</li>
+
+<li> Initialized with null
+
+```java
+var x = null;   // Error - Compiler cannot infer type
+```
+</li>
+
+<li>Multiple Variables in One Line
+
+```java
+var a = 1, b = 2;  // Not allowed
+```
+
+</li>
+
+<li> Array Initializer Without new
+
+```java
+var arr = {1,2,3};   // Wrong
+var arr = new int[]{1,2,3};
+```
+</li>
+
+<li>Catch Block Exception Type
+
+```java
+catch (var e)  // Not allowed
+```
+</li>
+</ol>
+
+7. Where var CANNOT Be Used
+<ul>
+<li>Must be initialized at declaration</li>
+<li>Type is inferred from initializer</li>
+<li>Inference happens at compile-time</li>
+<li>Cannot change type later</li>
+<li>Still strongly typed</li>
+</ul>
+Example:
+
+```java
+var x = 10;
+x = "Hello";  // Error (Type is int)
+```
+
+8. Special Notes About var
+<ul>
+<li>It is not dynamically typed</li>
+<li>Java remains statically typed</li>
+<li>Type is fixed after inference</li>
+<li>var is only a shortcut</li>
+</ul>

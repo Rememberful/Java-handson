@@ -142,5 +142,88 @@ tes
 Yeyey
 ```
 
-Example: 
+5. if-else if statement: The if-else if statement is used for decision making when you need to check multiple conditions.
+
+Syntax:
+
+```java
+if(condition1){
+    // code block if condition 1 is true
+} else if(condition2){
+    // code block if condition 2 is true
+} else if(condition3){
+    // code block if condition 3 is true
+} else {
+    // this block can be optional
+}
+```
+
+Example: a basic example of if-else if.
+
+```java
+public class Example_ifelseif {
+    public static void main(String[] args) {
+        int a = 10;
+        if(a>10){
+            System.out.println("a > 10");
+        } else if (a<10) {
+            System.out.println("a < 10");
+        } else{
+            System.out.println("a = 10");
+        }
+    }
+}
+```
+
+## Output
+
+```
+a = 10
+```
+
+Example: if-else if without braces
+
+```java
+public class Example2_ifelseif {
+
+    public static void main(String[] args) {
+        int a = 10;
+        if (a > 10) 
+            System.out.println("a > 10");
+        else if (a < 10) 
+            System.out.println("a < 10");
+        else 
+            System.out.println("a = 10");   
+    }
+}
+```
+
+## Output
+
+```
+a = 10
+```
+
+Example: else block is optional
+
+```java
+public class Example3_ifelseif {
+    public static void main(String[] args) {
+        int a = 10;
+        if (a > 10) {
+            System.out.println("Bye");
+        } else if (a <10) {
+            System.out.println("Hey");
+        }
+        System.out.println("Yes");
+    }   
+}
+```
+
+## Output
+
+```
+Yes
+```
+
 

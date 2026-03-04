@@ -85,4 +85,62 @@ public class Example2_if {
 Aditya
 ```
 
+4. if-else statement: else statement runs a block if condition is false.
+
+Syntax:
+
+```java
+if (condition) {
+    //statement1;
+} else {
+    //statement2;
+}
+```
+
+Example: a basic example of if-else
+
+```java
+public class Example_ifelse {
+    public static void main(String[] args) {
+        int a = 10;
+        if(a<5){
+            System.out.println("a is less than 5.");
+        } else{
+            System.out.println("a is more than 5.");
+        }
+    }
+}
+```
+
+## Output
+
+```
+a is more than 5.
+```
+
+Example: another example of if-else, without braces
+
+```java
+public class Example2_ifelse {
+    public static void main(String[] args) {
+        int a = 10;
+        if(a>5)
+            System.out.println("hey");
+        else 
+            System.out.println("why");
+            System.out.println("tes");
+        System.out.println("Yeyey");
+    }
+}
+```
+
+## Output
+
+```
+hey
+tes
+Yeyey
+```
+
+
 

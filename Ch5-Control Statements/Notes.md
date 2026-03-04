@@ -282,4 +282,189 @@ public class Example_nestedifs {
 Bye
 Hey
 ```
+Example: nested ifs with else.
+
+```java
+public class Example2_nestedifs {
+    public static void main(String[] args) {
+        int marks = 85;
+        if (marks >= 50) {
+            if (marks >= 75) {
+                System.out.println("Distinction");
+            } else {
+                System.out.println("Pass");
+            }
+        } else {
+            System.out.println("Fail");
+        }
+    }
+}
+```
+
+## Output
+
+```
+Distinction
+```
+
+7. switch statement: it executes a block of code based on the value of an expression.
+
+Syntax:
+
+```java
+switch(expression){ 
+    case value1:
+        //statements
+        break; //optional, but recommended
+    case value2:
+        //statements
+        break;
+    default: //optional
+        //default statements
+}
+```
+
+Example: basic example of switch statement.
+
+```java
+public class Example_statement {
+    public static void main(String[] args) {
+        int a = 10;
+        switch(a){
+            case 2:
+                System.out.println("2");
+                break;
+            case 5:
+                System.out.println("5");
+                break;
+            case 10:
+                System.out.println("10");
+                break;
+            default:
+                System.out.println("Default");
+        }
+    }
+}
+```
+
+## Output
+
+```
+10
+```
+
+Example: switch without break (Fall-through)
+
+```java
+public class Example2_switch {
+    public static void main(String[] args) {
+        int a = 10;
+        switch(a){
+            case 2:
+                System.out.println("2");
+            case 5:
+                System.out.println("5");
+            case 10:
+                System.out.println("10");
+            default:
+                System.out.println("Default");
+        }
+    }
+}
+```
+
+## Output
+
+```
+10
+Default
+```
+
+Example: switch with few breaks
+
+```java
+public class Example3_switch {
+    public static void main(String[] args) {
+        int a = 10;
+        switch (a) {
+            case 10:
+                System.out.println("10");
+            case 11:
+                System.out.println("11");
+                break;
+            default:
+                System.out.println("Default");
+                break;
+        }
+    }
+}
+```
+
+## Output
+
+```
+10
+11
+```
+
+Example: default can be at any place.
+
+```java
+public class Example3_switch {
+    public static void main(String[] args) {
+        int a = 10;
+        switch (a) {
+            case 10:
+                System.out.println("10");
+            default:
+                System.out.println("Default");
+                break;
+            case 11:
+                System.out.println("11");
+                break;   
+        }
+    }
+}
+```
+
+## Output
+
+```
+10
+Default
+```
+
+Example: duplicate cases are not allowed.
+
+```java
+public class Example4_switch {
+    public static void main(String[] args) {
+        int a = 10;
+        switch (a) {
+            case 10:
+                System.out.println("10");
+                break;
+            case 10:
+                System.out.println("10");
+                break;
+            default:
+                System.out.println("Default");
+                break;
+        }
+    }
+}
+```
+
+## Output
+
+```
+Example4_switch.java:8: error: duplicate case label
+            case 10:
+            ^
+1 error
+```
+
+Example: 
+
+
 

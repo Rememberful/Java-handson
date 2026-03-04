@@ -5,9 +5,9 @@ public class Example4_switch {
             case 10:
                 System.out.println("10");
                 break;
-            case 10:
-                System.out.println("10");
-                break;
+            // case 10:
+            //     System.out.println("10");
+            //     break;
             default:
                 System.out.println("Default");
                 break;

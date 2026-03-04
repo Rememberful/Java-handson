@@ -464,7 +464,80 @@ Example4_switch.java:8: error: duplicate case label
 1 error
 ```
 
-Example: 
+Example: nested switch
 
+```java
+public class Example5_switch {
+    public static void main(String[] args) {
+        int year = 2;
+        String branch = "CSE";
+
+        switch (year) {
+            case 2:
+                switch (branch) {
+                    case "CSE":
+                        System.out.println("Machine Learning");
+                        break;
+                    case "ECE":
+                        System.out.println("Antenna Engineering");
+                        break;
+                }
+        }
+    }
+}
+```
+
+## Output
+
+```
+Machine Learning
+```
+
+Example: char in switch
+
+```java
+public class Example5_switch {
+    public static void main(String[] args) {
+        char branch = 'a';
+
+        switch (branch) {
+            case 'a':
+                System.out.println("Machine Learning");
+                break;
+            case 'b':
+                System.out.println("Antenna Engineering");
+                break;
+        }
+    }
+}
+```
+
+## Output
+
+```
+Machine Learning
+```
+
+Example: new switch expression
+
+```java
+public class Example6_switch {
+    public static void main(String[] args) {
+        int day = 2;
+        String result = switch (day) {
+            case 1 -> "Monday";
+            case 2 -> "Tuesday";
+            default -> "Invalid";
+        };
+        System.out.println(result);
+    }
+}
+```
+
+## Output
+
+```
+Tuesday
+```
 
 

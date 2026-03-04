@@ -540,4 +540,49 @@ public class Example6_switch {
 Tuesday
 ```
 
+Example: another 
+
+```java
+public class Example7_switch {
+    public static void main(String[] args) {
+        int day = 2;
+        switch (day) {
+            case 2 -> System.out.println("HEY");
+        }
+    }
+}
+```
+
+## Output
+
+```
+HEY
+```
+
+Example: Multiple Cases in One Line
+
+```java
+public class Example8_switch {
+    public static void main(String[] args) {
+        int a = 10;
+        switch (a) {
+            case 9:
+                System.out.println("Yes");
+            case 10, 11:
+                System.out.println("Hey");
+                break;
+            default:
+                System.out.println("Bye");
+                break;
+        }
+    }
+}
+```
+
+## Output
+
+```
+Hey
+```
+
 

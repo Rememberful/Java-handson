@@ -226,4 +226,60 @@ public class Example3_ifelseif {
 Yes
 ```
 
+6. Nested ifs: 'if' inside another 'if'.
+
+Syntax:
+
+```java
+if(condition 1){
+    if(condition 2){
+        //code 
+    }
+}
+```
+
+Example: a basic example of nested ifs.
+
+```java
+public class Example_nestedifs {
+    public static void main(String[] args) {
+        int a = 10;
+        if (a>=10) {
+            System.out.println("Bye");
+            if(a==100){
+                System.out.println("Hey");
+            }
+        }
+    }
+}
+```
+
+## Output
+
+```
+Bye
+```
+
+Example: another example of nested ifs
+
+```java
+public class Example_nestedifs {
+    public static void main(String[] args) {
+        int a = 10;
+        if (a>=10) {
+            System.out.println("Bye");
+            if(a==10){
+                System.out.println("Hey");
+            }
+        }
+    }
+}
+```
+
+## Output
+
+```
+Bye
+Hey
+```
 

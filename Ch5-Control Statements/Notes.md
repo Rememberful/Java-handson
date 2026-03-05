@@ -988,3 +988,122 @@ public class Example11_whileloop {
 5 x 9 = 45
 5 x 10 = 50
 ```
+
+Example: Sum of Numbers from 1 to 10
+
+```java
+public class Example12_whileloop {
+    public static void main(String[] args) {
+        int i = 1;
+        int sum = 0;
+        while(i<=10){
+            sum = sum + i;
+            i++;
+        }
+        System.out.println("i is: "+ i);
+        System.out.println("Sum: "+ sum);
+
+    }
+}
+```
+
+## Output
+
+```
+i is: 11
+Sum: 55
+```
+
+Example: Count Numbers from 1 to N
+
+```java
+public class Example13_whileloop {
+    public static void main(String[] args) {
+        int i = 1;
+        int n = 5;
+        while (i<=n) {
+            System.out.println(i);
+            i++;
+        }
+    }
+}
+```
+
+## Output
+
+```
+1
+2
+3
+4
+5
+```
+
+Example: Print Squares of Numbers
+
+```java
+public class Example14_whileloop {
+    public static void main(String[] args) {
+        int i = 1;
+        while (i<=5) {
+            System.out.println("Square of " + i + " is "+ (i*i));
+            i++;
+        }
+    }
+}
+```
+
+## Output
+
+```
+Square of 1 is 1
+Square of 2 is 4
+Square of 3 is 9
+Square of 4 is 16
+Square of 5 is 25
+```
+
+Example: Print Characters Multiple Times
+
+```java
+public class Example15_whileloop {
+    public static void main(String[] args) {
+        int i = 0;
+        while(i<=3){
+            System.out.println("Aditya");
+            i++;
+        }
+    }
+}
+```
+
+## Output
+
+```
+Aditya
+Aditya
+Aditya
+Aditya
+```
+
+Example: Count Digits Using While Loop
+
+```java
+public class Example16_whileloop {
+    public static void main(String[] args) {
+        int num = 1000;
+        int count = 0;
+        while (num != 0) {
+            num = num / 10;
+            count++;
+        }
+        System.out.println("Digits = " + count);
+    }
+}
+```
+
+## Output
+
+```
+Digits = 4
+```

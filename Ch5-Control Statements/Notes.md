@@ -910,4 +910,52 @@ public class Example9_whileloop {
 Now i: 6    
 ```
 
+Example: Print Even Numbers from 1 to 10
+
+```java
+// Print Even Numbers from 1 to 10
+public class Example10_whileloop {
+    public static void main(String[] args) {
+        int i = 2;
+        while (i<=10) {
+            System.out.println(i);
+            i = i+2; // or i+=2
+        }
+    }
+}
+```
+
+## Output
+
+```
+2
+4
+6
+8
+10
+```
+
+Example: Print Odd Numbers from 1 to 10
+
+```java
+public class Example10_whileloop {
+    public static void main(String[] args) {
+        int i = 1;
+        while (i<=10) {
+            System.out.println(i);
+            i = i+2; // or i+=2
+        }
+    }
+}
+```
+
+## Output
+
+```
+1
+3
+5
+7
+9
+```
 

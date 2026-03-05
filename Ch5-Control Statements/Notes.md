@@ -718,4 +718,141 @@ public class Example4_whileloop {
 4
 ```
 
-Example: 
+Example: condition is false in while loop
+
+```java
+//condition is false in while loop
+public class Example5_whileloop {
+    public static void main(String[] args) {
+        int i = 0;
+        while(i>5){
+            System.out.println(i);
+        }
+    }
+}
+```
+
+## Output
+
+```
+-> No output as 0>5 is not true
+```
+
+Example: counter variable
+
+```java
+public class Example6_whileloop {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i<=5) {
+            System.out.println("Value of i: "+ i);
+            i++;
+        }
+    }
+}
+```
+
+##Output
+
+```
+Value of i: 0
+Value of i: 1
+Value of i: 2
+Value of i: 3
+Value of i: 4
+Value of i: 5
+```
+
+Example: another example of counter variable
+
+```java
+public class Example6_whileloop {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i<=5) {
+            i++;
+            System.out.println("Value of i: "+ i);
+        }
+    }
+}
+```
+
+## Output
+
+```
+Value of i: 1
+Value of i: 2
+Value of i: 3
+Value of i: 4
+Value of i: 5
+Value of i: 6
+```
+
+Example: while loop with 'break'
+
+```java
+public class Example7_whileloop {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i<=5) {
+            System.out.println(i);
+            break;
+        }
+    }
+}
+```
+
+## Output
+
+```
+0
+```
+Example: 'break' before any other code
+
+```java
+public class Example7_whileloop {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i<=5) {
+            break;
+            System.out.println(i);
+        }
+    }
+}
+```
+
+## Output
+
+```
+Example7_whileloop.java:6: error: unreachable statement
+            System.out.println(i);
+            ^
+1 error
+```
+
+Example: Keep in mind that code below the while loop executes when the while loop ends
+
+```java
+public class Example8_whileloop {
+    public static void main(String[] args) {
+        int i = 5;
+        while (i>=0) {
+            System.out.println(i);
+            i--;
+        }
+        System.out.println("Hey");
+    }
+}
+```
+
+## Output
+
+```
+5
+4
+3
+2
+1
+0
+Hey
+```

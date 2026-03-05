@@ -585,4 +585,137 @@ public class Example8_switch {
 Hey
 ```
 
+<h2><u>Iteration Statements:</u></h2>
 
+1. Loops are used to execute a block of code repeatedly until a specified condition becomes false.
+
+2. Java provides three main loop statements:
+
+<ol type="i">
+<li>while loop</li>
+<li>for loop</li>
+<li>do-while loop</li>
+</ol>
+These are called iteration statements because they repeat a set of instructions.
+
+<h2><u>while loop:</u></h2>
+
+1. It repeatedly executes a block of code as long as a specified condition remains true.
+
+Syntax:
+```java
+while (condition) {
+    // code block
+}
+```
+
+How it work:
+<ol type="a">
+  <li>The condition is evaluated first.</li>
+  <li>If the condition is true, the loop body executes.</li>
+  <li>After execution, the condition is checked again.</li>
+  <li>The loop continues until the condition becomes false.</li>
+  <li>When false, control moves to the next statement after the loop.</li>
+</ol>
+
+Example: a basic example of while loop
+
+```java
+// Printing from 0 to 5
+public class Example_whileloop {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i<=5) {
+            System.out.println(i);
+            i++;
+        }
+    }
+}
+```
+
+## Output
+
+```
+0
+1
+2
+3
+4
+5
+```
+
+Example: Another example of while loop, but this time with bit change
+
+```java
+// Printing from 1 to 6, where i is started as 0.
+public class Example2_whileloop {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i<=5) {
+            i++; //first do i++ then print in below line
+            System.out.println(i);
+        }
+    }
+}
+```
+
+## Output
+
+```
+1
+2
+3
+4
+5
+6
+```
+
+Example: infinite loop
+
+```java
+public class Example3_whileloop {
+    public static void main(String[] args) {
+        while (true) {
+            System.out.println("Hey");
+        }
+    }
+}
+```
+
+## Output
+
+```
+Hey
+Hey
+Hey
+.
+.
+.
+(infinite)
+```
+
+Example: using < instead of <= in while loop
+
+```java
+public class Example4_whileloop {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i<5) {
+            System.out.println(i);
+            i++;
+        }
+    }
+}
+```
+
+## Output
+
+```
+0
+1
+2
+3
+4
+```
+
+Example: 

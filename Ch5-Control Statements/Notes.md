@@ -1107,3 +1107,187 @@ public class Example16_whileloop {
 ```
 Digits = 4
 ```
+
+Example: Factorial
+
+```java
+import java.util.Scanner;
+
+public class Example17_whileloop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int num = sc.nextInt();
+
+        //logic
+        int factorial = 1;
+        int i = 1;
+        while (i <= num) {
+            factorial = factorial * i;
+            i++;
+        }
+        System.out.println("Factorial of " + num + " is: " + factorial);
+    }
+}
+```
+## Output
+
+```
+Enter a number: 
+3
+Factorial of 3 is: 6
+```
+
+Example: Reverse number
+
+```java
+import java.util.Scanner;
+
+public class Example18_whileloop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int num = sc.nextInt();
+
+        int reverse = 0;
+        while (num != 0) {
+            int digit = num % 10;        // get last digit
+            reverse = reverse * 10 + digit;
+            num = num / 10;              // remove last digit
+        }
+        System.out.println("Reversed number: " + reverse);
+    }
+}
+```
+
+## Output
+
+```
+Enter a number: 
+123
+Reversed number: 321
+```
+
+Example: Palindrome number
+
+```java
+import java.util.Scanner;
+
+public class Example19_whileloop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        int original = num;
+        int reverse = 0;
+        while (num != 0) {
+            int digit = num % 10;
+            reverse = reverse * 10 + digit;
+            num = num / 10;
+        }
+        if (original == reverse) {
+            System.out.println("The number is a Palindrome.");
+        } else {
+            System.out.println("The number is not a Palindrome.");
+        }
+    }
+}
+```
+
+## Output
+
+```
+Enter a number: 34543
+The number is a Palindrome.
+```
+Example: Sum of digits
+
+```java
+import java.util.Scanner;
+
+public class Example20_whileloop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        //logic
+        int sum = 0;
+        while (num != 0) {
+            int digit = num % 10;   // get last digit
+            sum = sum + digit;     // add digit to sum
+            num = num / 10;        // remove last digit
+        }
+        System.out.println("Sum of digits: " + sum);
+    }
+}
+```
+
+## Output
+
+```
+Enter a number: 123
+Sum of digits: 6
+```
+Example: Count digits
+
+```java
+import java.util.Scanner;
+
+public class Example21_whileloop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        int count = 0;
+        while (num != 0) {
+            num = num / 10;   // remove last digit
+            count++;          // increase count
+        }
+        System.out.println("Number of digits: " + count);
+    }
+}
+```
+
+## Output
+
+```
+Enter a number: 1234
+Number of digits: 4
+```
+Example: Fibonacci series
+
+```java
+import java.util.Scanner;
+
+public class Example22_whileloop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of terms: ");
+        int n = sc.nextInt();
+
+        //logic
+        int first = 0, second = 1;
+        int count = 0;
+        while (count < n) {
+            System.out.print(first + " ");
+            int next = first + second;
+            first = second;
+            second = next;
+            count++;
+        }
+    }
+}
+```
+
+## Output
+
+```
+Enter number of terms: 5
+0 1 1 2 3 
+```
+7️⃣ Armstrong number
+8️⃣ Largest digit in a number
+9️⃣ Product of digits
+🔟 Power of a number

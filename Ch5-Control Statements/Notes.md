@@ -1287,7 +1287,130 @@ public class Example22_whileloop {
 Enter number of terms: 5
 0 1 1 2 3 
 ```
-7️⃣ Armstrong number
-8️⃣ Largest digit in a number
-9️⃣ Product of digits
-🔟 Power of a number
+Example: Armstrong number
+
+```java
+import java.util.Scanner;
+
+public class Example23_whileloop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        int original = num;
+        int sum = 0;
+        while (num != 0) {
+            int digit = num % 10;
+            sum = sum + (digit * digit * digit);
+            num = num / 10;
+        }
+        if (sum == original) {
+            System.out.println("The number is an Armstrong number.");
+        } else {
+            System.out.println("The number is not an Armstrong number.");
+        }
+    }
+}
+```
+
+## Output
+
+```
+Enter a number: 123
+The number is not an Armstrong number.
+```
+
+Example: Largest digit in a number
+
+```java
+import java.util.Scanner;
+
+public class Example24_whileloop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        int largest = 0;
+        while (num != 0) {
+            int digit = num % 10;   // get last digit            
+            if (digit > largest) {
+                largest = digit;   // update largest digit
+            }
+            num = num / 10;        // remove last digit
+        }
+        System.out.println("Largest digit: " + largest);
+    }
+}
+```
+
+## Output
+
+```
+Enter a number: 234
+Largest digit: 4
+```
+Example: Product of digits
+
+
+```java
+import java.util.Scanner;
+
+public class Example25_whileloop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        int product = 1;
+        while (num != 0) {
+            int digit = num % 10;   // get last digit
+            product = product * digit;  // multiply digit
+            num = num / 10;        // remove last digit
+        }
+        System.out.println("Product of digits: " + product);
+    }
+}
+```
+
+## Output
+
+```
+Enter a number: 234
+Product of digits: 24
+```
+Example: Power of a number
+
+```java
+import java.util.Scanner;
+
+public class Example26_whileloop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter base: ");
+        int base = sc.nextInt();
+
+        System.out.print("Enter exponent: ");
+        int exponent = sc.nextInt();
+
+        int result = 1;
+        int i = 1;
+        while (i <= exponent) {
+            result = result * base;
+            i++;
+        }
+        System.out.println("Result: " + result);
+    }
+}
+```
+
+## Output
+
+```
+Enter base: 5
+Enter exponent: 2
+Result: 25
+```

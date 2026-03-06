@@ -1455,4 +1455,181 @@ Enter a number: 145
 The number is a Strong Number.
 ```
 
+Example: continue with while loop
 
+```java
+public class Example28_whileloop {
+    public static void main(String[] args) {
+        int i = 0;
+        while(i<=5){
+            i++;
+            if(i==3){
+                continue;
+            }
+            System.out.println(i);        
+        }
+    }
+}
+```
+
+## Output
+
+```
+1
+2
+4
+5
+6
+```
+
+Note: Use a while loop when the number of iterations is not known in advance.
+
+Example: when integer is provided as the condition
+
+```java
+public class Example29_whileloop {
+    public static void main(String[] args) {
+        int i = 0;
+        while(i++){
+            System.out.println("hey");
+        }
+    }
+}
+```
+
+## Output
+
+```
+Example29_whileloop.java:4: error: incompatible types: int cannot be converted to boolean
+        while(i++){
+               ^
+1 error
+```
+
+Example: giving == in condition
+
+```java
+public class Example30_whileloop {
+    public static void main(String[] args) {
+        int i = 5;
+        while (i==5) {
+            System.out.println("Hey");
+        }
+    }
+}
+```
+
+## Output
+
+```
+Hey
+Hey
+.
+.
+.
+.
+(infinite)
+```
+
+Example: using = in condition
+
+```java
+public class Example30_whileloop {
+    public static void main(String[] args) {
+        int i = 5;
+        while (i=5) {
+            System.out.println("Hey");
+        }
+    }
+}
+```
+
+## Output
+
+```
+Example30_whileloop.java:4: error: incompatible types: int cannot be converted to boolean
+        while (i=5) {
+                ^
+1 error
+```
+
+Example: while without braces
+
+```java
+public class Example31_whileloop {
+    public static void main(String[] args) {
+        int i = 1;
+        while (i>=1) 
+            System.out.println("Hey");
+        i++; // not visible to while loop
+    }
+}
+```
+
+## Output
+
+```
+Hey
+Hey
+.
+.
+.
+.
+(infinite)
+```
+
+Example: one important question
+
+```java
+public class Example32_whieloop {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i<=5) {
+            System.out.print(i++ + " ");
+        }
+    }
+}
+```
+
+## Output
+
+```
+0 1 2 3 4 5 
+```
+
+Example: using ";" just after the condition
+
+```java
+public class Example33_whileloop {
+    public static void main(String[] args) {
+        int i = 0;
+        while(i>=3); //empty loop
+        System.out.println("Hy");
+    }
+}
+```
+
+## Output
+
+```
+Hy
+```
+
+Example: using i++ in the condition
+
+```java
+public class Example34_whileloop {
+    public static void main(String[] args) {
+        int i = 1;
+        while (i++ < 5) {
+            System.out.print(i + " ");
+        }
+    }
+}
+```
+
+## Output
+
+```
+2 3 4 5
+```

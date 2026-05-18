@@ -1680,4 +1680,48 @@ public class Example36_whileloop {
 (infinite)
 ```
 
+<h2><u>do-while loop:</u></h2>
+
+1. A do-while loop is similar to a while loop, but: the loop body executes first and Condition is checked later.
+
+Syntax:
+```java
+do {
+    // code to execute
+} while(condition);
+```
+
+How it work:
+<ol type="a">
+  <li>Execute loop body</li>
+  <li>Check condition</li>
+  <li>If true → repeat</li>
+  <li>If false → stop</li>
+</ol>
+
+Real life use cases of do-while loop:
+
+Example: a basic example
+
+```java
+public class Example37_dowhile {
+    public static void main(String[] args) {
+        int i = 1;
+        do {
+            System.out.println(i);
+            i++;
+        } while (i<=5);
+    }
+}
+```
+
+## Output
+
+```
+1
+2
+3
+4
+5
+```
 

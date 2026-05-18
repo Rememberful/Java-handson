@@ -1633,3 +1633,51 @@ public class Example34_whileloop {
 ```
 2 3 4 5
 ```
+
+Example: another tricky question
+
+```java
+public class Example35_whileloop {
+    public static void main(String[] args) {
+        int i = 1;
+
+        while (i++ <= 5)
+            System.out.print(i++ + " ");
+    }
+}
+```
+
+## Output
+
+```
+2 4 6
+```
+
+Example: i = i++ trap
+
+```java
+public class Example36_whileloop {
+    public static void main(String[] args) {
+        int i = 0;
+        while(i<5){
+            i=i++;
+            System.out.println(i);
+        }
+        System.out.println(i);
+    }
+}
+```
+
+## Output
+
+```
+0
+0
+0
+.
+.
+.
+(infinite)
+```
+
+

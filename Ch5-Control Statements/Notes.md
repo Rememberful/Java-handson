@@ -1812,5 +1812,85 @@ public class Example40_dowhile {
 3
 4
 ```
+Example: infinite do-while loop example
+
+```java
+public class Example41_dowhile {
+    public static void main(String[] args) {
+        int i = 0;
+        do {
+            System.out.println(i);
+        } while (i>=0);
+    }
+}
+```
+
+## Output
+```
+0
+0
+0
+0
+.
+.
+.
+```
+Example: menu driven program
+
+```java
+import java.util.*;
+
+public class Example42_dowhile {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int choice;
+
+        do {
+            System.out.println("===Menu===");
+            System.out.println("1. For Hey");
+            System.out.println("2. For Hello");
+            System.out.println("3. For exit");
+            System.out.print("Enter your choice: ");
+            choice = sc.nextInt();
+            switch (choice) {
+                case 1:
+                    System.out.println("Hey");
+                    break;
+                case 2:
+                    System.out.println("Hello");
+                    break;
+                case 3:
+                    System.out.println("Exiting the program");
+                    break;
+                default:
+                    System.out.println("Invalid entry");
+                    break;
+            }
+        } while (choice!=3);
+    }
+}
+```
+## Output
+```
+===Menu===
+1. For Hey
+2. For Hello
+3. For exit
+Enter your choice: 1
+Hey
+===Menu===
+1. For Hey
+2. For Hello
+3. For exit
+Enter your choice: 2
+Hello
+===Menu===
+1. For Hey
+2. For Hello
+3. For exit
+Enter your choice: 3
+Exiting the program
+```
+
 
 

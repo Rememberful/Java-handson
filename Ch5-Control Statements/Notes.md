@@ -1893,4 +1893,77 @@ Exiting the program
 ```
 
 
+Example: number guess game 
+
+```java
+import java.util.Scanner;
+public class Example43_dowhile {
+    public static void main(String[] args) {
+
+        int secret = 7;
+        Scanner sc = new Scanner(System.in);
+        int guess;
+        do {
+            System.out.println("Enter the value:");
+            guess = sc.nextInt();
+
+            if(guess==secret){
+                System.out.println("Correct guess");
+            }
+            else if(guess<secret){
+                System.out.println("Too low!");
+            }
+            else{
+                System.err.println("Too high!");
+            }
+        } while (guess!=secret);
+    }   
+}
+```
+
+## Output
+```
+Enter the value:
+3
+Too low!
+Enter the value:
+9
+Too high!
+Enter the value:
+7
+Correct guess
+```
+
+Example: Input Validation Using do-while Loop
+
+```java
+import java.util.*;
+public class Example44_dowhile {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num;
+        do {
+            System.out.println("Enter a +ve number:");
+            num = sc.nextInt();
+
+            if(num<=0){
+                System.out.println("Invalid Input");
+            }
+        } while (num<=0);
+        System.out.println("Valid Number Entered: " + num);
+    }
+}
+```
+## Output
+```
+Enter a +ve number:
+-4
+Invalid Input
+Enter a +ve number:
+0
+Invalid Input
+Enter a +ve number:
+9
+Valid Number Entered: 9
+```
 

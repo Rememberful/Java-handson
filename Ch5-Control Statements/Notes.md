@@ -1725,3 +1725,92 @@ public class Example37_dowhile {
 5
 ```
 
+Example: a basic example printing from 1 to 5
+
+```java
+public class Example38_dowhile {
+    public static void main(String[] args){
+        int i = 1;
+        do {
+            System.out.println(i);
+            i++;
+        } while (i<=5);
+    }
+}
+```
+
+## Output
+
+```
+1
+2
+3
+4
+5
+```
+Example: a basic example printing from 1 to 5, but changed the position of i++.
+
+```java
+public class Example39_dowhile {
+    public static void main(String[] args){
+        int i = 1;
+        do {
+            i++;
+            System.out.println(i);
+        } while (i<=5);
+    }
+}
+```
+## Output
+
+```
+2
+3
+4
+5
+6
+```
+
+Example: a basic example printing from 1 to 5, but added two i++
+
+```java
+public class Example38_dowhile {
+    public static void main(String[] args){
+        int i = 1;
+        do {
+            System.out.println(i);
+            i++;
+            i++;
+        } while (i<=5);
+    }
+}
+```
+## Output
+```
+1
+3
+5
+```
+Example: Condition false initially
+
+```java
+public class Example40_dowhile {
+    public static void main(String[] args) {
+        int i = 3;
+        do {
+            System.out.println(i);
+            i++;
+        } while (i>5);
+
+        // i after the end of loop
+        System.out.println(i);
+    }
+}
+```
+## Output
+```
+3
+4
+```
+
+

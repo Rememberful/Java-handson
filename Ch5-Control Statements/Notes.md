@@ -2021,3 +2021,107 @@ public class Example46_dowhile {
 Example: using the 'continue' in do-while loop
 
 ```java
+public class Example47_dowhile {
+    public static void main(String[] args) {
+        int i = 1;
+        do {
+            i++;
+            if(i==5){
+                continue;
+            }
+            System.out.println(i);
+        } while (i<=10);
+    }
+}
+```
+
+## Output
+```
+2
+3
+4
+6
+7
+8
+9
+10
+11
+```
+
+<h2><u>for loop:</u></h2>
+
+1. Syntax:
+
+```java
+for(initialization; condition; update){
+    // code
+}
+```
+
+2. Order of execution:
+<ol type="a">
+  <li>Initialization</li>
+  <li>Condition check</li>
+  <li>Loop body executes</li>
+  <li>Update</li>
+  <li>Again condition check</li>
+  <li>Repeat...</li>
+</ol>
+
+Example: a basic example of for loop
+
+```java
+public class Example48_forloop {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+    }
+}
+```
+
+## Output
+
+```
+1
+2
+3
+4
+5
+```
+
+Example: printing even numbers from 0 to 10.
+
+```java
+public class Example49_forloop {
+    public static void main(String[] args) {
+        for(int i = 0; i <= 10; i = i+2){
+            System.out.print(i+ " ");
+        }
+    }
+}
+```
+
+## Output
+
+```
+0 2 4 6 8 10 
+```
+
+Example: printing odd numbers from 1 to 10.
+
+```java
+public class Example50_forloop {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i = i + 2) {
+            System.out.print(i + " ");
+        }
+    }
+}
+```
+
+## Output
+
+```
+1 3 5 7 9 
+```

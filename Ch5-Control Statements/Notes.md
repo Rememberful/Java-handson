@@ -2125,3 +2125,188 @@ public class Example50_forloop {
 ```
 1 3 5 7 9 
 ```
+
+Example: infinite loop using for loop
+
+```java
+// When the condition is omitted, Java treats it as true, so the loop never ends.
+public class Example52_forloop {
+    public static void main(String[] args) {
+        for (;;) {
+            System.out.println("Hey");
+        }
+    }
+}
+```
+
+## Output
+
+```
+Hey
+Hey
+Hey
+Hey
+Hey
+.
+.
+.
+.
+```
+
+Example: Reverse Loop / Countdown
+
+```java
+public class Example53_forloop {
+    public static void main(String[] args) {
+        for (int i = 10; i > 0 ; i--) {
+            System.out.println(i);
+        }
+    }
+}
+```
+
+## Output
+
+```
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+```
+
+Example: sum of numbers (from 1 to 5)
+
+```java
+public class Example54_forloop {
+    public static void main(String[] args) {
+        int sum = 0;
+        for (int i = 1; i <= 5; i++) {
+            sum = sum + i;
+        }
+        System.out.println(sum);
+    }
+
+}
+```
+
+## Output
+
+```
+15
+```
+
+Example: scope of the variable declared in the for loop be inside it only. i exists ONLY inside the loop.
+
+```java
+public class Example55_forloop {
+    public static void main(String[] args) {
+        for (int i = 0; i < 5; i++) {
+        }
+        System.out.println(i);
+    }
+}
+```
+
+## Output
+
+```
+Example55_forloop.java:5: error: cannot find symbol
+        System.out.println(i);
+                           ^
+  symbol:   variable i
+  location: class Example55_forloop
+1 error
+```
+
+Example: Multiple Variables in for Loop. Java allows multiple initialization and update statements.
+
+```java
+public class Example56_forloop {
+    public static void main(String[] args) {
+        for (int i = 0, j = 10; i < j; i++, j--) {
+            System.out.println(" i is " + i + " " + "j is " +  j);
+        }
+    }
+}
+```
+
+## Output
+
+```
+i is 0 j is 10
+i is 1 j is 9
+i is 2 j is 8
+i is 3 j is 7
+i is 4 j is 6
+```
+
+Example: we can ommit the initialization, but need to declare it before the loop
+
+```java
+public class Example57_forloop {
+    public static void main(String[] args) {
+        int i = 0;
+        for (; i < 3; i++) {
+            System.out.println(i);
+        }
+    }
+}
+```
+
+## Output
+
+```
+0
+1
+2
+```
+
+Example: missing update section in the for loop, we can write it later on in the loop itself.
+
+```java
+public class Example58_forloop {
+    public static void main(String[] args) {
+        for (int i = 0; i < 2;) {
+            System.out.println(i);
+            i++;
+        }
+    }
+}
+```
+
+## Output
+
+```
+0
+1
+```
+
+Example: Missing Condition (it will be taken as the condition is true always)
+
+```java
+public class Example59_forloop {
+    public static void main(String[] args) {
+        for (int i = 0; ; i++) {
+            System.out.println(i);
+        }
+    }
+}
+```
+
+## Output
+
+```
+1
+2
+3
+4
+.
+.
+.
+```

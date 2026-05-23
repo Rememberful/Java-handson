@@ -2310,3 +2310,142 @@ public class Example59_forloop {
 .
 .
 ```
+
+Example: Body less for loop. Loop can work without body. That semicolon itself is the loop body.
+
+```java
+public class Example60_forloop {
+    public static void main(String[] args) {
+        int i = 0;
+        for (; i <=10; i++);
+        System.out.println(i);
+    }
+}
+```
+
+## Output
+
+```
+11
+```
+
+Example: nested loop. Print a small multiplication grid.
+
+```java
+public class Example61_forloop {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 3; i++) {
+            for (int j = 1; j <= 3; j++) {
+                System.out.print(i * j + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+## Output
+
+```
+1 2 3 
+2 4 6 
+3 6 9 
+```
+
+Example: break with for Loop
+
+```java
+public class Example62_forloop {
+    public static void main(String[] args) {
+        for (int i = 1; i <=10; i++) {
+            if(i==4){
+                break;
+            }
+            System.out.println(i);
+        }
+    }
+}
+```
+
+## Output
+
+```
+1
+2
+3
+```
+
+Example: continue with for Loop
+
+
+```java
+public class Example63_forloop {
+    public static void main(String[] args) {
+        for (int i = 1; i <=10; i++) {
+            if(i==3){
+                continue;
+            }
+            System.out.println(i);
+        }
+    }
+}
+```
+
+## Output
+
+```
+1
+2
+4
+5
+6
+7
+8
+9
+10
+```
+
+Example: character loop
+
+```java
+public class Example64_forloop {
+    public static void main(String[] args) {
+        for(char ch = 'A'; ch <= 'Z'; ch++){
+            System.out.println(ch);
+        }
+    }
+}
+```
+
+## Output
+
+```
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+```
+
+

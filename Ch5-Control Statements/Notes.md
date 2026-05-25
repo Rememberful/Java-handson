@@ -2143,6 +2143,6 @@ public class Example50_forloop {
 ## Output
 
 ```
-2 4 6 8 10 ...
+2 4 6 8 10 ....
 ```
 
